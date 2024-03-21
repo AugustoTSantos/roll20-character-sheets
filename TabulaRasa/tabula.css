@@ -1,0 +1,20 @@
+.sheet-principal {
+    margin: 0 auto;
+    font-size: 13px;
+    color: black;
+    width: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    column-gap: 22px;
+    grid-template-columns: 516px 312px;
+    min-height: 1200px
+}
+
+.sheet-cabecalho {
+    margin-top: 1%;
+    display: grid;
+    width: 800px;
+    height: 200px;
+    grid-template-columns: 50px 50px left;
+    column-gap: 23.5px;
+}

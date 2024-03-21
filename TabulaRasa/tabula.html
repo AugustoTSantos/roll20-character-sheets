@@ -1,0 +1,608 @@
+<div class="principal">
+    <div class="cabecalho">
+        <div class="info_cabecalho1">
+            Nome
+            <input
+                class="informacao_personagem"
+                name="attr_nome_personagem"
+                type="text"
+                value=""
+            />
+
+            Aparencia
+            <input
+                class="informacao_personagem"
+                name="attr_aparencia_personagem"
+                type="text"
+                value=""
+            />
+        </div>
+        <!-- Fim info_cabecalho1 -->
+        <div class="info_cabecalho2">
+            Pseudôminos
+            <input
+                class="informacao_personagem"
+                name="attr_pseudominos_personagem"
+                type="text"
+                value=""
+            />
+
+            Idade
+            <input
+                class="informacao_personagem"
+                name="attr_idade_personagem"
+                type="number"
+                value="0"
+            />
+
+            Sexo
+            <input
+                class="informacao_personagem"
+                name="attr_sexo_personagem"
+                type="text"
+                value=""
+            />
+        </div>
+        <!-- Fim info_cabecalho2 -->
+        <div class="info_cabecalho3">
+            Conceito
+            <input
+                class="informacao_personagem"
+                name="attr_conceito_personagem"
+                type="text"
+                value=""
+            />
+
+            XP Total
+            <input
+                class="informacao_personagem"
+                name="attr_xp_total_personagem"
+                type="number"
+                value="0"
+            />
+
+            XP Gasto
+            <input
+                class="informacao_personagem"
+                name="attr_xp_gasto_personagem"
+                type="number"
+                value="(@{xp_total_atributos} + @{xp_total_tracos_condicoes} + @{xp_total_habilidades})"
+                disabled
+            />
+
+            XP Livre
+            <input
+                class="informacao_personagem"
+                name="attr_xp_livre_personagem"
+                type="number"
+                value="(@{xp_total_personagem} - @{xp_gasto_personagem})"
+                disabled
+            />
+        </div>
+        <!-- Fim info_cabecalho3 -->
+    </div>
+    <!-- Fim cabecalho -->
+    <br><br>
+    <label>Atributos</label>
+    <div class="atributos">
+        Nome
+        Base
+        Nivel
+        Mod
+        Total
+        %
+        XP
+        <div class="atributo_forca">
+            Força
+            <input
+                class="linha1"
+                name="attr_base"
+                type="number"
+                value="0"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_for_nivel"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_for_mod"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_for_total"
+                type="number"
+                value="(@{base} + @{for_nivel} + @{for_mod})"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_for_porcent"
+                type="number"
+                value="(@{for_total}*4)"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_for_xp"
+                type="number"
+                value="0"
+            />
+        </div>
+        <!-- Fim atributo_forca -->
+        <div class="atributo_agilidade">
+            Agilidade
+            <input
+                class="linha1"
+                name="attr_base"
+                type="number"
+                value="0"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_agi_nivel"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_agi_mod"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_agi_total"
+                type="number"
+                value="(@{base} + @{agi_nivel} + @{agi_mod})"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_agi_porcent"
+                type="number"
+                value="(@{agi_total}*4)"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_agi_xp"
+                type="number"
+                value="0"
+            />
+        </div>
+        <!-- Fim atributo_agilidade -->
+        <div class="atributo_vigor">
+            Vigor
+            <input
+                class="linha1"
+                name="attr_base"
+                type="number"
+                value="0"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_vig_nivel"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_vig_mod"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_vig_total"
+                type="number"
+                value="(@{base} + @{vig_nivel} + @{vig_mod})"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_vig_porcent"
+                type="number"
+                value="(@{vig_total}*4)"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_vig_xp"
+                type="number"
+                value="0"
+            />
+        </div>
+        <!-- Fim atributo_vigor -->
+        <div class="atributo_intelecto">
+            Intelecto
+            <input
+                class="linha1"
+                name="attr_base"
+                type="number"
+                value="0"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_int_nivel"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_int_mod"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_int_total"
+                type="number"
+                value="(@{base} + @{int_nivel} + @{int_mod})"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_int_porcent"
+                type="number"
+                value="(@{int_total}*4)"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_int_xp"
+                type="number"
+                value="0"
+            />
+        </div>
+        <!-- Fim atributo_intelecto -->
+        <div class="atributo_percepcao">
+            Percepção
+            <input
+                class="linha1"
+                name="attr_base"
+                type="number"
+                value="0"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_per_nivel"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_per_mod"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_per_total"
+                type="number"
+                value="(@{base} + @{per_nivel} + @{per_mod})"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_per_porcent"
+                type="number"
+                value="(@{per_total}*4)"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_per_xp"
+                type="number"
+                value="0"
+            />
+        </div>
+        <!-- Fim atributo_percepcao -->
+        <div class="atributo_vontade">
+            Vontade
+            <input
+                class="linha1"
+                name="attr_base"
+                type="number"
+                value="0"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_von_nivel"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_von_mod"
+                type="number"
+                value="0"
+            />
+            <input
+                class="linha1"
+                name="attr_von_total"
+                type="number"
+                value="(@{base} + @{von_nivel} + @{von_mod})"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_von_porcent"
+                type="number"
+                value="(@{von_total}*4)"
+                disabled
+            />
+            <input
+                class="linha1"
+                name="attr_von_xp"
+                type="number"
+                value="0"
+            />
+        </div>
+        <!-- Fim atributo_von -->
+        XP Total
+        <input
+            class="linha1"
+            name="attr_xp_total_atributos"
+            type="number"
+            value="(@{for_xp} + @{agi_xp} + @{vig_xp} + @{int_xp} + @{per_xp} + @{von_xp})"
+            disabled
+        />
+    </div>
+    <!-- Fim atributos -->
+    <br><br>
+    <label>Atributos Secundários</label>
+    <div class="atributos_secundarios">
+        <label>Vitalidade</label>
+        <div class="sub_atributo_vitalidade">
+            Base
+            <input
+                class="linha1"
+                name="attr_sub_vit_base"
+                type="number"
+                value="(@{vig_total}*2)"
+                disabled
+            />
+            Mod
+            <input
+                class="linha1"
+                name="attr_sub_vit_mod"
+                type="number"
+                value="0"
+            />
+            Total
+            <input
+                class="linha1"
+                name="attr_sub_vit_total"
+                type="number"
+                value="(@{sub_vit_base} + @{sub_vit_mod})"
+                disabled
+            />
+        </div>
+        <!-- Fim sub_atributo_vitalidade -->
+        <label>Iniciativa</label>
+        <div class="sub_atributo_iniciativa">
+            Base
+            <input
+                class="linha1"
+                name="attr_sub_ini_base"
+                type="number"
+                value="(@{agi_total}*2)"
+                disabled
+            />
+            Mod
+            <input
+                class="linha1"
+                name="attr_sub_ini_mod"
+                type="number"
+                value="0"
+            />
+            Total
+            <input
+                class="linha1"
+                name="attr_sub_ini_total"
+                type="number"
+                value="(@{sub_ini_base} + @{sub_ini_mod})"
+                disabled
+            />
+        </div>
+        <!-- Fim sub_atributo_iniciativa -->
+        <label>Mod de Dano</label>
+        <div class="sub_atributo_mod_dano">
+            Base
+            <input
+                class="linha1"
+                name="attr_sub_mod_dano_base"
+                type="number"
+                value="((@{for_total} - 10) / 2)"
+                disabled
+            />
+            Mod
+            <input
+                class="linha1"
+                name="attr_sub_mod_dano_mod"
+                type="number"
+                value="0"
+            />
+            Total
+            <input
+                class="linha1"
+                name="attr_sub_mod_dano_total"
+                type="number"
+                value="(@{sub_mod_dano_base} + @{sub_mod_dano_mod})"
+                disabled
+            />
+        </div>
+        <!-- Fim sub_atributo_mod_dano -->
+        <label>Sanidade</label>
+        <div class="sub_atributo_sanidade">
+            Base
+            <input
+                class="linha1"
+                name="attr_sub_san_base"
+                type="number"
+                value="(@{von_total}*2)"
+                disabled
+            />
+            Mod
+            <input
+                class="linha1"
+                name="attr_sub_san_mod"
+                type="number"
+                value="0"
+            />
+            Total
+            <input
+                class="linha1"
+                name="attr_sub_san_total"
+                type="number"
+                value="(@{sub_san_base} + @{sub_san_mod})"
+                disabled
+            />
+        </div>
+        <!-- Fim sub_atributo_sanidade -->
+        <label>Raciocínio</label>
+        <div class="sub_atributo_raciocinio">
+            Base
+            <input
+                class="linha1"
+                name="attr_sub_rac_base"
+                type="number"
+                value="(@{per_total}*2)"
+                disabled
+            />
+            Mod
+            <input
+                class="linha1"
+                name="attr_sub_rac_mod"
+                type="number"
+                value="0"
+            />
+            Total
+            <input
+                class="linha1"
+                name="attr_sub_rac_total"
+                type="number"
+                value="(@{sub_rac_base} + @{sub_rac_mod})"
+                disabled
+            />
+        </div>
+        <!-- Fim sub_atributo_raciocinio -->
+        <label>Estresse</label>
+        <div class="sub_atributo_estresse">
+            Base
+            <input
+                class="linha1"
+                name="attr_sub_est_base"
+                type="number"
+                value="((@{int_total} - 10) / 2)"
+                disabled
+            />
+            Mod
+            <input
+                class="linha1"
+                name="attr_sub_est_mod"
+                type="number"
+                value="0"
+            />
+            Total
+            <input
+                class="linha1"
+                name="attr_sub_est_total"
+                type="number"
+                value="(@{sub_est_base} + @{sub_est_mod})"
+                disabled
+            />
+        </div>
+        <!-- Fim sub_atributo_estresse -->
+    </div>
+    <!-- Fim atributos_secundarios -->
+    <br><br>
+    <label>Traços e Condições</label>
+    Nome
+    XP
+    <div class="tracos_condicoes">
+        <div>
+            <fieldset class="caixa_tracos_condicoes">
+                <div>
+                    <input type="text" name="attr_tra_cod_nome"/>
+                    <input type="number" name="attr_tra_cod_xp" value="0"/>
+                </div>
+            </fieldset>
+        </div>
+        XP Total
+        <input
+            class="linha1"
+            name="attr_xp_total_tracos_condicoes"
+            type="number"
+            value="(@{tra_cod_xp})"
+            disabled
+        />
+    </div>
+    <!-- Fim tracos_condicoes -->
+    <br><br>
+    <label>Habilidades</label>
+    <div class="habilidades">
+        Nome
+        Nivel
+        Mod
+        Total
+        %
+        XP
+        <fieldset class="caixa_habilidades">
+            <div>
+                <input type="text" name="attr_hab_nome"/>
+                <input type="number" name="attr_hab_nivel" value="0"/>
+                <input type="number" name="attr_hab_mod" value="0"/>
+                <input type="number" name="attr_hab_total" value="(@{hab_nivel} + @{hab_mod})" disabled/>
+                <input type="number" name="attr_hab_porcent" value="(@{hab_total}*4/100)" disabled/>
+                <input type="number" name="attr_hab_xp" value="0"/>
+            </div>
+        </fieldset>
+        XP Total
+        <input
+            class="linha1"
+            name="attr_xp_total_habilidades"
+            type="number"
+            value="(@{hab_xp})"
+            disabled
+        />
+    </div>
+    <!-- Fim habilidades -->
+</div>
+<!-- Fim principal -->
+
+<!-- JS -->
+<script type="text/worker">
+on("change:xp_gasto_personagem change:xp_total_atributos change:xp_total_tracos_condicoes change:xp_total_habilidades sheet:opened", function() {
+    /*Calculo XP gasto*/
+    getAttrs([
+        "xp_gasto_personagem", "xp_total_atributos", "xp_total_tracos_condicoes", "xp_total_habilidades"
+    ], function(values) {
+        let xp_total_atributos = parseInt(values.xp_total_atributos)||0;
+        console.log(xp_total_atributos);
+        let xp_total_tracos_condicoes = parseInt(xp_total_tracos_condicoes)||0;
+        console.log(xp_total_tracos_condicoes)
+        let xp_total_habilidades = parseInt(xp_total_habilidades)||0;
+        console.log(xp_total_habilidades)
+
+        let xp_gasto_personagem = xp_total_atributos + xp_total_tracos_condicoes + xp_total_habilidades;
+        console.log(xp_gasto_personagem)
+
+        setAttrs({                            
+            "xp_gasto_personagem": xp_gasto_personagem
+        });
+        console.log(xp_gasto_personagem)
+    });
+});
+</script>
