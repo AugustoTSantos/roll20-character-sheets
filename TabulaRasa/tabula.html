@@ -66,8 +66,8 @@
                 class="informacao_personagem"
                 name="attr_xp_gasto_personagem"
                 type="number"
-                value="(@{xp_total_atributos} + @{xp_total_tracos_condicoes} + @{xp_total_habilidades})"
-                disabled
+                value="0"
+                readonly
             />
 
             XP Livre
@@ -75,8 +75,8 @@
                 class="informacao_personagem"
                 name="attr_xp_livre_personagem"
                 type="number"
-                value="(@{xp_total_personagem} - @{xp_gasto_personagem})"
-                disabled
+                value="0"
+                readonly
             />
         </div>
         <!-- Fim info_cabecalho3 -->
@@ -99,7 +99,7 @@
                 name="attr_base"
                 type="number"
                 value="0"
-                disabled
+                readonly
             />
             <input
                 class="linha1"
@@ -117,15 +117,15 @@
                 class="linha1"
                 name="attr_for_total"
                 type="number"
-                value="(@{base} + @{for_nivel} + @{for_mod})"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
                 name="attr_for_porcent"
                 type="number"
-                value="(@{for_total}*4)"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
@@ -142,7 +142,7 @@
                 name="attr_base"
                 type="number"
                 value="0"
-                disabled
+                readonly
             />
             <input
                 class="linha1"
@@ -160,15 +160,15 @@
                 class="linha1"
                 name="attr_agi_total"
                 type="number"
-                value="(@{base} + @{agi_nivel} + @{agi_mod})"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
                 name="attr_agi_porcent"
                 type="number"
-                value="(@{agi_total}*4)"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
@@ -185,7 +185,7 @@
                 name="attr_base"
                 type="number"
                 value="0"
-                disabled
+                readonly
             />
             <input
                 class="linha1"
@@ -203,15 +203,15 @@
                 class="linha1"
                 name="attr_vig_total"
                 type="number"
-                value="(@{base} + @{vig_nivel} + @{vig_mod})"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
                 name="attr_vig_porcent"
                 type="number"
-                value="(@{vig_total}*4)"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
@@ -228,7 +228,7 @@
                 name="attr_base"
                 type="number"
                 value="0"
-                disabled
+                readonly
             />
             <input
                 class="linha1"
@@ -246,15 +246,15 @@
                 class="linha1"
                 name="attr_int_total"
                 type="number"
-                value="(@{base} + @{int_nivel} + @{int_mod})"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
                 name="attr_int_porcent"
                 type="number"
-                value="(@{int_total}*4)"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
@@ -271,7 +271,7 @@
                 name="attr_base"
                 type="number"
                 value="0"
-                disabled
+                readonly
             />
             <input
                 class="linha1"
@@ -289,15 +289,15 @@
                 class="linha1"
                 name="attr_per_total"
                 type="number"
-                value="(@{base} + @{per_nivel} + @{per_mod})"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
                 name="attr_per_porcent"
                 type="number"
-                value="(@{per_total}*4)"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
@@ -314,7 +314,7 @@
                 name="attr_base"
                 type="number"
                 value="0"
-                disabled
+                readonly
             />
             <input
                 class="linha1"
@@ -332,15 +332,15 @@
                 class="linha1"
                 name="attr_von_total"
                 type="number"
-                value="(@{base} + @{von_nivel} + @{von_mod})"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
                 name="attr_von_porcent"
                 type="number"
-                value="(@{von_total}*4)"
-                disabled
+                value="0"
+                readonly
             />
             <input
                 class="linha1"
@@ -355,8 +355,8 @@
             class="linha1"
             name="attr_xp_total_atributos"
             type="number"
-            value="(@{for_xp} + @{agi_xp} + @{vig_xp} + @{int_xp} + @{per_xp} + @{von_xp})"
-            disabled
+            value="0"
+            readonly
         />
     </div>
     <!-- Fim atributos -->
@@ -370,8 +370,8 @@
                 class="linha1"
                 name="attr_sub_vit_base"
                 type="number"
-                value="(@{vig_total}*2)"
-                disabled
+                value="0"
+                readonly
             />
             Mod
             <input
@@ -385,8 +385,8 @@
                 class="linha1"
                 name="attr_sub_vit_total"
                 type="number"
-                value="(@{sub_vit_base} + @{sub_vit_mod})"
-                disabled
+                value="0"
+                readonly
             />
         </div>
         <!-- Fim sub_atributo_vitalidade -->
@@ -397,8 +397,8 @@
                 class="linha1"
                 name="attr_sub_ini_base"
                 type="number"
-                value="(@{agi_total}*2)"
-                disabled
+                value="0"
+                readonly
             />
             Mod
             <input
@@ -412,8 +412,8 @@
                 class="linha1"
                 name="attr_sub_ini_total"
                 type="number"
-                value="(@{sub_ini_base} + @{sub_ini_mod})"
-                disabled
+                value="0"
+                readonly
             />
         </div>
         <!-- Fim sub_atributo_iniciativa -->
@@ -424,8 +424,8 @@
                 class="linha1"
                 name="attr_sub_mod_dano_base"
                 type="number"
-                value="((@{for_total} - 10) / 2)"
-                disabled
+                value="0"
+                readonly
             />
             Mod
             <input
@@ -439,8 +439,8 @@
                 class="linha1"
                 name="attr_sub_mod_dano_total"
                 type="number"
-                value="(@{sub_mod_dano_base} + @{sub_mod_dano_mod})"
-                disabled
+                value="0"
+                readonly
             />
         </div>
         <!-- Fim sub_atributo_mod_dano -->
@@ -451,8 +451,8 @@
                 class="linha1"
                 name="attr_sub_san_base"
                 type="number"
-                value="(@{von_total}*2)"
-                disabled
+                value="0"
+                readonly
             />
             Mod
             <input
@@ -466,8 +466,8 @@
                 class="linha1"
                 name="attr_sub_san_total"
                 type="number"
-                value="(@{sub_san_base} + @{sub_san_mod})"
-                disabled
+                value="0"
+                readonly
             />
         </div>
         <!-- Fim sub_atributo_sanidade -->
@@ -478,8 +478,8 @@
                 class="linha1"
                 name="attr_sub_rac_base"
                 type="number"
-                value="(@{per_total}*2)"
-                disabled
+                value="0"
+                readonly
             />
             Mod
             <input
@@ -493,8 +493,8 @@
                 class="linha1"
                 name="attr_sub_rac_total"
                 type="number"
-                value="(@{sub_rac_base} + @{sub_rac_mod})"
-                disabled
+                value="0"
+                readonly
             />
         </div>
         <!-- Fim sub_atributo_raciocinio -->
@@ -505,8 +505,8 @@
                 class="linha1"
                 name="attr_sub_est_base"
                 type="number"
-                value="((@{int_total} - 10) / 2)"
-                disabled
+                value="0"
+                readonly
             />
             Mod
             <input
@@ -520,8 +520,8 @@
                 class="linha1"
                 name="attr_sub_est_total"
                 type="number"
-                value="(@{sub_est_base} + @{sub_est_mod})"
-                disabled
+                value="0"
+                readonly
             />
         </div>
         <!-- Fim sub_atributo_estresse -->
@@ -545,8 +545,8 @@
             class="linha1"
             name="attr_xp_total_tracos_condicoes"
             type="number"
-            value="(@{tra_cod_xp})"
-            disabled
+            value="0"
+            readonly
         />
     </div>
     <!-- Fim tracos_condicoes -->
@@ -564,8 +564,8 @@
                 <input type="text" name="attr_hab_nome"/>
                 <input type="number" name="attr_hab_nivel" value="0"/>
                 <input type="number" name="attr_hab_mod" value="0"/>
-                <input type="number" name="attr_hab_total" value="(@{hab_nivel} + @{hab_mod})" disabled/>
-                <input type="number" name="attr_hab_porcent" value="(@{hab_total}*4/100)" disabled/>
+                <input type="number" name="attr_hab_total" value="0" readonly/>
+                <input type="number" name="attr_hab_porcent" value="0" readonly/>
                 <input type="number" name="attr_hab_xp" value="0"/>
             </div>
         </fieldset>
@@ -574,8 +574,8 @@
             class="linha1"
             name="attr_xp_total_habilidades"
             type="number"
-            value="(@{hab_xp})"
-            disabled
+            value="0"
+            readonly
         />
     </div>
     <!-- Fim habilidades -->
@@ -584,25 +584,416 @@
 
 <!-- JS -->
 <script type="text/worker">
-on("change:xp_gasto_personagem change:xp_total_atributos change:xp_total_tracos_condicoes change:xp_total_habilidades sheet:opened", function() {
-    /*Calculo XP gasto*/
-    getAttrs([
-        "xp_gasto_personagem", "xp_total_atributos", "xp_total_tracos_condicoes", "xp_total_habilidades"
-    ], function(values) {
-        let xp_total_atributos = parseInt(values.xp_total_atributos)||0;
-        console.log(xp_total_atributos);
-        let xp_total_tracos_condicoes = parseInt(xp_total_tracos_condicoes)||0;
-        console.log(xp_total_tracos_condicoes)
-        let xp_total_habilidades = parseInt(xp_total_habilidades)||0;
-        console.log(xp_total_habilidades)
+/*Calculo XP Total Atributos*/
+on("change:for_xp change:agi_xp change:vig_xp change:int_xp change:per_xp change:von_xp sheet:opened", function() {
+    getAttrs(["for_xp", "agi_xp", "vig_xp", "int_xp", "per_xp", "von_xp"], function(values) {
+        let for_xp = parseInt(values.for_xp) || 0;
+        let agi_xp = parseInt(values.agi_xp) || 0;
+        let vig_xp = parseInt(values.vig_xp) || 0;
+        let int_xp = parseInt(values.int_xp) || 0;
+        let per_xp = parseInt(values.per_xp) || 0;
+        let von_xp = parseInt(values.von_xp) || 0;
+
+        let xp_total_atributos = for_xp + agi_xp + vig_xp + int_xp + per_xp + von_xp;
+
+        setAttrs({                            
+            "xp_total_atributos": xp_total_atributos
+        });
+    });
+});
+/*Calculo XP Traços e Condições*/
+on("change:tra_cod_xp sheet:opened", function() {
+    getAttrs(["tra_cod_xp"], function(values) {
+        let tra_cod_xp = parseInt(values.tra_cod_xp) || 0;
+
+        let xp_total_tracos_condicoes = tra_cod_xp;
+        setAttrs({                            
+            "xp_total_tracos_condicoes": xp_total_tracos_condicoes
+        });
+    });
+});
+/*Calculo XP Habilidades*/
+on("change:hab_xp sheet:opened", function() {
+    getAttrs(["hab_xp"], function(values) {
+        let hab_xp = parseInt(values.hab_xp) || 0;
+
+        let xp_total_habilidades = hab_xp;
+        setAttrs({                            
+            "xp_total_habilidades": xp_total_habilidades
+        });
+    });
+});
+/*Calculo XP Gasto*/
+on("change:xp_total_atributos change:xp_total_tracos_condicoes change:xp_total_habilidades sheet:opened", function() {
+    getAttrs(["xp_total_atributos", "xp_total_tracos_condicoes", "xp_total_habilidades"], function(values) {
+        let xp_total_atributos = parseInt(values.xp_total_atributos) || 0;
+        let xp_total_tracos_condicoes = parseInt(values.xp_total_tracos_condicoes) || 0;
+        let xp_total_habilidades = parseInt(values.xp_total_habilidades) || 0;
 
         let xp_gasto_personagem = xp_total_atributos + xp_total_tracos_condicoes + xp_total_habilidades;
-        console.log(xp_gasto_personagem)
-
         setAttrs({                            
             "xp_gasto_personagem": xp_gasto_personagem
         });
-        console.log(xp_gasto_personagem)
+    });
+});
+/*Calculo XP Livre*/
+on("change:xp_total_personagem change:xp_gasto_personagem sheet:opened", function() {
+    getAttrs(["xp_total_personagem", "xp_gasto_personagem"], function(values) {
+        let xp_total_personagem = parseInt(values.xp_total_personagem) || 0;
+        let xp_gasto_personagem = parseInt(values.xp_gasto_personagem) || 0;
+
+        let xp_livre_personagem = xp_total_personagem - xp_gasto_personagem;
+
+        setAttrs({                            
+            "xp_livre_personagem": xp_livre_personagem
+        });
+    });
+});
+/*Calculo Atributos Base*/
+on("change:idade_personagem sheet:opened", function() {
+    getAttrs(["idade_personagem"], function(values) {
+        let idade_personagem = parseInt(values.idade_personagem) || 0;
+        let base = 0;
+
+        if (idade_personagem <= 17)
+            base = Math.floor((idade_personagem - 1) / 2);
+        else
+            base = 8;
+
+        setAttrs({
+            "base": base
+        });
+    });
+});
+/*Calculo Força*/
+on("change:base change:for_nivel change:for_mod sheet:opened", function() {
+    getAttrs(["base", "for_nivel", "for_mod"], function(values) {
+        let base = parseInt(values.base) || 0;
+        let for_nivel = parseInt(values.for_nivel) || 0;
+        let for_mod = parseInt(values.for_mod) || 0;
+
+        let for_total = base + for_nivel + for_mod;
+
+        setAttrs({                            
+            "for_total": for_total
+        });
+    });
+});
+/*Calculo Porcentagem Força */
+on("change:for_total sheet:opened", function() {
+    getAttrs(["for_total"], function(values) {
+        let for_total = parseInt(values.for_total) || 0;
+
+        let for_porcent = for_total * 4;
+
+        setAttrs({                            
+            "for_porcent": for_porcent
+        });
+    });
+});
+/*Calculo Agilidade*/
+on("change:base change:agi_nivel change:agi_mod sheet:opened", function() {
+    getAttrs(["base", "agi_nivel", "agi_mod"], function(values) {
+        let base = parseInt(values.base) || 0;
+        let agi_nivel = parseInt(values.agi_nivel) || 0;
+        let agi_mod = parseInt(values.agi_mod) || 0;
+
+        let agi_total = base + agi_nivel + agi_mod;
+
+        setAttrs({                            
+            "agi_total": agi_total
+        });
+    });
+});
+/*Calculo Porcentagem Agilidade */
+on("change:agi_total sheet:opened", function() {
+    getAttrs(["agi_total"], function(values) {
+        let agi_total = parseInt(values.agi_total) || 0;
+
+        let agi_porcent = agi_total * 4;
+
+        setAttrs({                            
+            "agi_porcent": agi_porcent
+        });
+    });
+});
+/*Calculo Vigor*/
+on("change:base change:vig_nivel change:vig_mod sheet:opened", function() {
+    getAttrs(["base", "vig_nivel", "vig_mod"], function(values) {
+        let base = parseInt(values.base) || 0;
+        let vig_nivel = parseInt(values.vig_nivel) || 0;
+        let vig_mod = parseInt(values.vig_mod) || 0;
+
+        let vig_total = base + vig_nivel + vig_mod;
+
+        setAttrs({                            
+            "vig_total": vig_total
+        });
+    });
+});
+/*Calculo Porcentagem Vigor */
+on("change:vig_total sheet:opened", function() {
+    getAttrs(["vig_total"], function(values) {
+        let vig_total = parseInt(values.vig_total) || 0;
+
+        let vig_porcent = vig_total * 4;
+
+        setAttrs({                            
+            "vig_porcent": vig_porcent
+        });
+    });
+});
+/*Calculo Intelecto*/
+on("change:base change:int_nivel change:int_mod sheet:opened", function() {
+    getAttrs(["base", "int_nivel", "int_mod"], function(values) {
+        let base = parseInt(values.base) || 0;
+        let int_nivel = parseInt(values.int_nivel) || 0;
+        let int_mod = parseInt(values.int_mod) || 0;
+
+        let int_total = base + int_nivel + int_mod;
+
+        setAttrs({                            
+            "int_total": int_total
+        });
+    });
+});
+/*Calculo Porcentagem Intelecto */
+on("change:int_total sheet:opened", function() {
+    getAttrs(["int_total"], function(values) {
+        let int_total = parseInt(values.int_total) || 0;
+
+        let int_porcent = int_total * 4;
+
+        setAttrs({                            
+            "int_porcent": int_porcent
+        });
+    });
+});
+/*Calculo Percepção*/
+on("change:base change:per_nivel change:per_mod sheet:opened", function() {
+    getAttrs(["base", "per_nivel", "per_mod"], function(values) {
+        let base = parseInt(values.base) || 0;
+        let per_nivel = parseInt(values.per_nivel) || 0;
+        let per_mod = parseInt(values.per_mod) || 0;
+
+        let per_total = base + per_nivel + per_mod;
+
+        setAttrs({                            
+            "per_total": per_total
+        });
+    });
+});
+/*Calculo Porcentagem Percepção */
+on("change:per_total sheet:opened", function() {
+    getAttrs(["per_total"], function(values) {
+        let per_total = parseInt(values.per_total) || 0;
+
+        let per_porcent = per_total * 4;
+
+        setAttrs({                            
+            "per_porcent": per_porcent
+        });
+    });
+});
+/*Calculo Vontade*/
+on("change:base change:von_nivel change:von_mod sheet:opened", function() {
+    getAttrs(["base", "von_nivel", "von_mod"], function(values) {
+        let base = parseInt(values.base) || 0;
+        let von_nivel = parseInt(values.von_nivel) || 0;
+        let von_mod = parseInt(values.von_mod) || 0;
+
+        let von_total = base + von_nivel + von_mod;
+
+        setAttrs({                            
+            "von_total": von_total
+        });
+    });
+});
+/*Calculo Porcentagem Vontade */
+on("change:von_total sheet:opened", function() {
+    getAttrs(["von_total"], function(values) {
+        let von_total = parseInt(values.von_total) || 0;
+
+        let von_porcent = von_total * 4;
+
+        setAttrs({                            
+            "von_porcent": von_porcent
+        });
+    });
+});
+/*Calculo Vitalidade Base*/
+on("change:vig_total sheet:opened", function() {
+    getAttrs(["vig_total"], function(values) {
+        let vig_total = parseInt(values.vig_total) || 0;
+
+        let sub_vit_base = vig_total * 2;
+
+        setAttrs({                            
+            "sub_vit_base": sub_vit_base
+        });
+    });
+});
+/*Calculo Vitalidade Total*/
+on("change:sub_vit_base change:sub_vit_mod sheet:opened", function() {
+    getAttrs(["sub_vit_base", "sub_vit_mod"], function(values) {
+        let sub_vit_base = parseInt(values.sub_vit_base) || 0;
+        let sub_vit_mod = parseInt(values.sub_vit_mod) || 0;
+
+        let sub_vit_total = sub_vit_base + sub_vit_mod;
+
+        setAttrs({                            
+            "sub_vit_total": sub_vit_total
+        });
+    });
+});
+/*Calculo Iniciativa Base*/
+on("change:for_total sheet:opened", function() {
+    getAttrs(["agi_total"], function(values) {
+        let agi_total = parseInt(values.agi_total) || 0;
+
+        let sub_ini_base = agi_total * 2;
+
+        setAttrs({                            
+            "sub_ini_base": sub_ini_base
+        });
+    });
+});
+/*Calculo Iniciativa Total*/
+on("change:sub_ini_base change:sub_ini_mod sheet:opened", function() {
+    getAttrs(["sub_ini_base", "sub_ini_mod"], function(values) {
+        let sub_ini_base = parseInt(values.sub_ini_base) || 0;
+        let sub_ini_mod = parseInt(values.sub_ini_mod) || 0;
+
+        let sub_ini_total = sub_ini_base + sub_ini_mod;
+
+        setAttrs({                            
+            "sub_ini_total": sub_ini_total
+        });
+    });
+});
+/*Calculo Mod de Dano Base*/
+on("change:for_total sheet:opened", function() {
+    getAttrs(["for_total"], function(values) {
+        let for_total = parseInt(values.for_total) || 0;
+
+        let sub_mod_dano_base = Math.floor((for_total - 10) / 2);
+
+        setAttrs({                            
+            "sub_mod_dano_base": sub_mod_dano_base
+        });
+    });
+});
+/*Calculo Mod de Dano Total*/
+on("change:sub_mod_dano_base change:sub_mod_dano_mod sheet:opened", function() {
+    getAttrs(["sub_mod_dano_base", "sub_mod_dano_mod"], function(values) {
+        let sub_mod_dano_base = parseInt(values.sub_mod_dano_base) || 0;
+        let sub_mod_dano_mod = parseInt(values.sub_mod_dano_mod) || 0;
+
+        let sub_mod_dano_total = sub_mod_dano_base + sub_mod_dano_mod;
+
+        setAttrs({                            
+            "sub_mod_dano_total": sub_mod_dano_total
+        });
+    });
+});
+/*Calculo Sanidade Base*/
+on("change:von_total sheet:opened", function() {
+    getAttrs(["von_total"], function(values) {
+        let von_total = parseInt(values.von_total) || 0;
+
+        let sub_san_base = von_total * 2;
+
+        setAttrs({                            
+            "sub_san_base": sub_san_base
+        });
+    });
+});
+/*Calculo Sanidade Total*/
+on("change:sub_san_base change:sub_san_mod sheet:opened", function() {
+    getAttrs(["sub_san_base", "sub_san_mod"], function(values) {
+        let sub_san_base = parseInt(values.sub_san_base) || 0;
+        let sub_san_mod = parseInt(values.sub_san_mod) || 0;
+
+        let sub_san_total = sub_san_base + sub_san_mod;
+
+        setAttrs({                            
+            "sub_san_total": sub_san_total
+        });
+    });
+});
+/*Calculo Raciocinio Base*/
+on("change:per_total sheet:opened", function() {
+    getAttrs(["per_total"], function(values) {
+        let per_total = parseInt(values.per_total) || 0;
+
+        let sub_rac_base = per_total * 2;
+
+        setAttrs({                            
+            "sub_rac_base": sub_rac_base
+        });
+    });
+});
+/*Calculo Raciocinio Total*/
+on("change:sub_rac_base change:sub_rac_mod sheet:opened", function() {
+    getAttrs(["sub_rac_base", "sub_rac_mod"], function(values) {
+        let sub_rac_base = parseInt(values.sub_rac_base) || 0;
+        let sub_rac_mod = parseInt(values.sub_rac_mod) || 0;
+
+        let sub_rac_total = sub_rac_base + sub_rac_mod;
+
+        setAttrs({                            
+            "sub_rac_total": sub_rac_total
+        });
+    });
+});
+/*Calculo Estresse Base*/
+on("change:int_total sheet:opened", function() {
+    getAttrs(["int_total"], function(values) {
+        let int_total = parseInt(values.int_total) || 0;
+
+        let sub_est_base = Math.floor((int_total - 10 ) / 2);
+
+        setAttrs({                            
+            "sub_est_base": sub_est_base
+        });
+    });
+});
+/*Calculo Estresse Total*/
+on("change:sub_est_base change:sub_est_mod sheet:opened", function() {
+    getAttrs(["sub_est_base", "sub_est_mod"], function(values) {
+        let sub_est_base = parseInt(values.sub_est_base) || 0;
+        let sub_est_mod = parseInt(values.sub_est_mod) || 0;
+
+        let sub_est_total = sub_est_base + sub_est_mod;
+
+        setAttrs({                            
+            "sub_est_total": sub_est_total
+        });
+    });
+});
+/*Calculo Habilidade Total*/
+on("change:hab_nivel change:hab_mod sheet:opened", function() {
+    getAttrs(["hab_nivel", "hab_mod"], function(values) {
+        let hab_nivel = parseInt(values.hab_nivel) || 0;
+        let hab_mod = parseInt(values.hab_mod) || 0;
+
+        let hab_total = hab_nivel + hab_mod;
+
+        setAttrs({                            
+            "hab_total": hab_total
+        });
+    });
+});
+/*Calculo Porcentagem Habilidade */
+on("change:hab_total sheet:opened", function() {
+    getAttrs(["hab_total"], function(values) {
+        let hab_total = parseInt(values.hab_total) || 0;
+
+        let hab_porcent = hab_total * 4;
+
+        setAttrs({                            
+            "hab_porcent": hab_porcent
+        });
     });
 });
 </script>
