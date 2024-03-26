@@ -1,999 +1,894 @@
 <div class="principal">
-    <div class="cabecalho">
-        <div class="info_cabecalho1">
-            Nome
-            <input
-                class="informacao_personagem"
-                name="attr_nome_personagem"
-                type="text"
-                value=""
-            />
+  <div class="cabecalho">
+    <div class="info_cabecalho1">
+      Nome
+      <input
+        class="informacao_personagem"
+        name="attr_nome_personagem"
+        type="text"
+        placeholder="José da Silva"
+      />
 
-            Aparencia
-            <input
-                class="informacao_personagem"
-                name="attr_aparencia_personagem"
-                type="text"
-                value=""
-            />
-        </div>
-        <!-- Fim info_cabecalho1 -->
-        <div class="info_cabecalho2">
-            Pseudôminos
-            <input
-                class="informacao_personagem"
-                name="attr_pseudominos_personagem"
-                type="text"
-                value=""
-            />
-
-            Idade
-            <input
-                class="informacao_personagem"
-                name="attr_idade_personagem"
-                type="number"
-                value="0"
-            />
-
-            Sexo
-            <input
-                class="informacao_personagem"
-                name="attr_sexo_personagem"
-                type="text"
-                value=""
-            />
-        </div>
-        <!-- Fim info_cabecalho2 -->
-        <div class="info_cabecalho3">
-            Conceito
-            <input
-                class="informacao_personagem"
-                name="attr_conceito_personagem"
-                type="text"
-                value=""
-            />
-
-            XP Total
-            <input
-                class="informacao_personagem"
-                name="attr_xp_total_personagem"
-                type="number"
-                value="0"
-            />
-
-            XP Gasto
-            <input
-                class="informacao_personagem"
-                name="attr_xp_gasto_personagem"
-                type="number"
-                value="0"
-                readonly
-            />
-
-            XP Livre
-            <input
-                class="informacao_personagem"
-                name="attr_xp_livre_personagem"
-                type="number"
-                value="0"
-                readonly
-            />
-        </div>
-        <!-- Fim info_cabecalho3 -->
+      Aparencia
+      <input
+        class="informacao_personagem"
+        name="attr_aparencia_personagem"
+        type="text"
+        placeholder="alto e moreno de olhos castanhos"
+      />
     </div>
-    <!-- Fim cabecalho -->
-    <br><br>
-    <label>Atributos</label>
-    <div class="atributos">
-        Nome
-        Base
-        Nivel
-        Mod
-        Total
-        %
-        XP
-        <div class="atributo_forca">
-            Força
-            <input
-                class="linha1"
-                name="attr_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_for_nivel"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_for_mod"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_for_total"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_for_porcent"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_for_xp"
-                type="number"
-                value="0"
-            />
-        </div>
-        <!-- Fim atributo_forca -->
-        <div class="atributo_agilidade">
-            Agilidade
-            <input
-                class="linha1"
-                name="attr_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_agi_nivel"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_agi_mod"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_agi_total"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_agi_porcent"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_agi_xp"
-                type="number"
-                value="0"
-            />
-        </div>
-        <!-- Fim atributo_agilidade -->
-        <div class="atributo_vigor">
-            Vigor
-            <input
-                class="linha1"
-                name="attr_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_vig_nivel"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_vig_mod"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_vig_total"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_vig_porcent"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_vig_xp"
-                type="number"
-                value="0"
-            />
-        </div>
-        <!-- Fim atributo_vigor -->
-        <div class="atributo_intelecto">
-            Intelecto
-            <input
-                class="linha1"
-                name="attr_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_int_nivel"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_int_mod"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_int_total"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_int_porcent"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_int_xp"
-                type="number"
-                value="0"
-            />
-        </div>
-        <!-- Fim atributo_intelecto -->
-        <div class="atributo_percepcao">
-            Percepção
-            <input
-                class="linha1"
-                name="attr_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_per_nivel"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_per_mod"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_per_total"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_per_porcent"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_per_xp"
-                type="number"
-                value="0"
-            />
-        </div>
-        <!-- Fim atributo_percepcao -->
-        <div class="atributo_vontade">
-            Vontade
-            <input
-                class="linha1"
-                name="attr_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_von_nivel"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_von_mod"
-                type="number"
-                value="0"
-            />
-            <input
-                class="linha1"
-                name="attr_von_total"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_von_porcent"
-                type="number"
-                value="0"
-                readonly
-            />
-            <input
-                class="linha1"
-                name="attr_von_xp"
-                type="number"
-                value="0"
-            />
-        </div>
-        <!-- Fim atributo_von -->
-        XP Total
-        <input
-            class="linha1"
-            name="attr_xp_total_atributos"
-            type="number"
-            value="0"
-            readonly
-        />
+    <!-- Fim info_cabecalho1 -->
+    <div class="info_cabecalho2">
+      Pseudôminos
+      <input
+        class="informacao_personagem"
+        name="attr_pseudominos_personagem"
+        type="text"
+        placeholder="Zé"
+      />
+
+      Idade
+      <input
+        class="informacao_personagem"
+        name="attr_idade_personagem"
+        type="number"
+        value="0"
+      />
+
+      Sexo
+      <input
+        class="informacao_personagem"
+        name="attr_sexo_personagem"
+        type="text"
+        placeholder="M/F"
+      />
     </div>
-    <!-- Fim atributos -->
-    <br><br>
-    <label>Atributos Secundários</label>
-    <div class="atributos_secundarios">
-        <label>Vitalidade</label>
-        <div class="sub_atributo_vitalidade">
-            Base
-            <input
-                class="linha1"
-                name="attr_sub_vit_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            Mod
-            <input
-                class="linha1"
-                name="attr_sub_vit_mod"
-                type="number"
-                value="0"
-            />
-            Total
-            <input
-                class="linha1"
-                name="attr_sub_vit_total"
-                type="number"
-                value="0"
-                readonly
-            />
-        </div>
-        <!-- Fim sub_atributo_vitalidade -->
-        <label>Iniciativa</label>
-        <div class="sub_atributo_iniciativa">
-            Base
-            <input
-                class="linha1"
-                name="attr_sub_ini_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            Mod
-            <input
-                class="linha1"
-                name="attr_sub_ini_mod"
-                type="number"
-                value="0"
-            />
-            Total
-            <input
-                class="linha1"
-                name="attr_sub_ini_total"
-                type="number"
-                value="0"
-                readonly
-            />
-        </div>
-        <!-- Fim sub_atributo_iniciativa -->
-        <label>Mod de Dano</label>
-        <div class="sub_atributo_mod_dano">
-            Base
-            <input
-                class="linha1"
-                name="attr_sub_mod_dano_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            Mod
-            <input
-                class="linha1"
-                name="attr_sub_mod_dano_mod"
-                type="number"
-                value="0"
-            />
-            Total
-            <input
-                class="linha1"
-                name="attr_sub_mod_dano_total"
-                type="number"
-                value="0"
-                readonly
-            />
-        </div>
-        <!-- Fim sub_atributo_mod_dano -->
-        <label>Sanidade</label>
-        <div class="sub_atributo_sanidade">
-            Base
-            <input
-                class="linha1"
-                name="attr_sub_san_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            Mod
-            <input
-                class="linha1"
-                name="attr_sub_san_mod"
-                type="number"
-                value="0"
-            />
-            Total
-            <input
-                class="linha1"
-                name="attr_sub_san_total"
-                type="number"
-                value="0"
-                readonly
-            />
-        </div>
-        <!-- Fim sub_atributo_sanidade -->
-        <label>Raciocínio</label>
-        <div class="sub_atributo_raciocinio">
-            Base
-            <input
-                class="linha1"
-                name="attr_sub_rac_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            Mod
-            <input
-                class="linha1"
-                name="attr_sub_rac_mod"
-                type="number"
-                value="0"
-            />
-            Total
-            <input
-                class="linha1"
-                name="attr_sub_rac_total"
-                type="number"
-                value="0"
-                readonly
-            />
-        </div>
-        <!-- Fim sub_atributo_raciocinio -->
-        <label>Estresse</label>
-        <div class="sub_atributo_estresse">
-            Base
-            <input
-                class="linha1"
-                name="attr_sub_est_base"
-                type="number"
-                value="0"
-                readonly
-            />
-            Mod
-            <input
-                class="linha1"
-                name="attr_sub_est_mod"
-                type="number"
-                value="0"
-            />
-            Total
-            <input
-                class="linha1"
-                name="attr_sub_est_total"
-                type="number"
-                value="0"
-                readonly
-            />
-        </div>
-        <!-- Fim sub_atributo_estresse -->
+    <!-- Fim info_cabecalho2 -->
+    <div class="info_cabecalho3">
+      Conceito
+      <input
+        class="informacao_personagem"
+        name="attr_conceito_personagem"
+        type="text"
+        placeholder="Samurai Renegado"
+      />
+
+      XP Total
+      <input
+        class="informacao_personagem"
+        name="attr_xp_total_personagem"
+        type="number"
+        value="0"
+      />
+
+      XP Gasto
+      <input
+        class="informacao_personagem"
+        name="attr_xp_gasto_personagem"
+        type="number"
+        value="0"
+        readonly
+      />
+
+      XP Livre
+      <input
+        class="informacao_personagem"
+        name="attr_xp_livre_personagem"
+        type="number"
+        value="0"
+        readonly
+      />
     </div>
-    <!-- Fim atributos_secundarios -->
-    <br><br>
-    <label>Traços e Condições</label>
-    Nome
-    XP
-    <div class="tracos_condicoes">
+    <!-- Fim info_cabecalho3 -->
+  </div>
+  <!-- Fim cabecalho -->
+  <br /><br />
+  <label>Atributos</label>
+  <div class="atributos">
+    Nome Base Nivel Mod Total % XP
+    <div class="atributo_forca">
+      Força
+      <input class="" name="attr_base" type="number" value="0" readonly />
+      <input class="" name="attr_for_nivel" type="number" value="0" />
+      <input class="" name="attr_for_mod" type="number" value="0" />
+      <input
+        class=""
+        name="attr_for_total"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input
+        class=""
+        name="attr_for_porcent"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input class="" name="attr_for_xp" type="number" value="0" />
+    </div>
+    <!-- Fim atributo_forca -->
+    <div class="atributo_agilidade">
+      Agilidade
+      <input class="" name="attr_base" type="number" value="0" readonly />
+      <input class="" name="attr_agi_nivel" type="number" value="0" />
+      <input class="" name="attr_agi_mod" type="number" value="0" />
+      <input
+        class=""
+        name="attr_agi_total"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input
+        class=""
+        name="attr_agi_porcent"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input class="" name="attr_agi_xp" type="number" value="0" />
+    </div>
+    <!-- Fim atributo_agilidade -->
+    <div class="atributo_vigor">
+      Vigor
+      <input class="" name="attr_base" type="number" value="0" readonly />
+      <input class="" name="attr_vig_nivel" type="number" value="0" />
+      <input class="" name="attr_vig_mod" type="number" value="0" />
+      <input
+        class=""
+        name="attr_vig_total"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input
+        class=""
+        name="attr_vig_porcent"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input class="" name="attr_vig_xp" type="number" value="0" />
+    </div>
+    <!-- Fim atributo_vigor -->
+    <div class="atributo_intelecto">
+      Intelecto
+      <input class="" name="attr_base" type="number" value="0" readonly />
+      <input class="" name="attr_int_nivel" type="number" value="0" />
+      <input class="" name="attr_int_mod" type="number" value="0" />
+      <input
+        class=""
+        name="attr_int_total"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input
+        class=""
+        name="attr_int_porcent"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input class="" name="attr_int_xp" type="number" value="0" />
+    </div>
+    <!-- Fim atributo_intelecto -->
+    <div class="atributo_percepcao">
+      Percepção
+      <input class="" name="attr_base" type="number" value="0" readonly />
+      <input class="" name="attr_per_nivel" type="number" value="0" />
+      <input class="" name="attr_per_mod" type="number" value="0" />
+      <input
+        class=""
+        name="attr_per_total"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input
+        class=""
+        name="attr_per_porcent"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input class="" name="attr_per_xp" type="number" value="0" />
+    </div>
+    <!-- Fim atributo_percepcao -->
+    <div class="atributo_vontade">
+      Vontade
+      <input class="" name="attr_base" type="number" value="0" readonly />
+      <input class="" name="attr_von_nivel" type="number" value="0" />
+      <input class="" name="attr_von_mod" type="number" value="0" />
+      <input
+        class=""
+        name="attr_von_total"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input
+        class=""
+        name="attr_von_porcent"
+        type="number"
+        value="0"
+        readonly
+      />
+      <input class="" name="attr_von_xp" type="number" value="0" />
+    </div>
+    <!-- Fim atributo_von -->
+    XP Total
+    <input
+      class=""
+      name="attr_xp_total_atributos"
+      type="number"
+      value="0"
+      readonly
+    />
+  </div>
+  <!-- Fim atributos -->
+  <br /><br />
+  <label>Atributos Secundários</label>
+  <div class="atributos_secundarios">
+    <label>Vitalidade</label>
+    <div class="sub_atributo_vitalidade">
+      Base
+      <input
+        class=""
+        name="attr_sub_vit_base"
+        type="number"
+        value="0"
+        readonly
+      />
+      Mod
+      <input class="" name="attr_sub_vit_mod" type="number" value="0" />
+      Total
+      <input
+        class=""
+        name="attr_sub_vit_total"
+        type="number"
+        value="0"
+        readonly
+      />
+    </div>
+    <!-- Fim sub_atributo_vitalidade -->
+    <label>Iniciativa</label>
+    <div class="sub_atributo_iniciativa">
+      Base
+      <input
+        class=""
+        name="attr_sub_ini_base"
+        type="number"
+        value="0"
+        readonly
+      />
+      Mod
+      <input class="" name="attr_sub_ini_mod" type="number" value="0" />
+      Total
+      <input
+        class=""
+        name="attr_sub_ini_total"
+        type="number"
+        value="0"
+        readonly
+      />
+    </div>
+    <!-- Fim sub_atributo_iniciativa -->
+    <label>Mod de Dano</label>
+    <div class="sub_atributo_mod_dano">
+      Base
+      <input
+        class=""
+        name="attr_sub_mod_dano_base"
+        type="number"
+        value="0"
+        readonly
+      />
+      Mod
+      <input
+        class=""
+        name="attr_sub_mod_dano_mod"
+        type="number"
+        value="0"
+      />
+      Total
+      <input
+        class=""
+        name="attr_sub_mod_dano_total"
+        type="number"
+        value="0"
+        readonly
+      />
+    </div>
+    <!-- Fim sub_atributo_mod_dano -->
+    <label>Sanidade</label>
+    <div class="sub_atributo_sanidade">
+      Base
+      <input
+        class=""
+        name="attr_sub_san_base"
+        type="number"
+        value="0"
+        readonly
+      />
+      Mod
+      <input class="" name="attr_sub_san_mod" type="number" value="0" />
+      Total
+      <input
+        class=""
+        name="attr_sub_san_total"
+        type="number"
+        value="0"
+        readonly
+      />
+    </div>
+    <!-- Fim sub_atributo_sanidade -->
+    <label>Raciocínio</label>
+    <div class="sub_atributo_raciocinio">
+      Base
+      <input
+        class=""
+        name="attr_sub_rac_base"
+        type="number"
+        value="0"
+        readonly
+      />
+      Mod
+      <input class="" name="attr_sub_rac_mod" type="number" value="0" />
+      Total
+      <input
+        class=""
+        name="attr_sub_rac_total"
+        type="number"
+        value="0"
+        readonly
+      />
+    </div>
+    <!-- Fim sub_atributo_raciocinio -->
+    <label>Estresse</label>
+    <div class="sub_atributo_estresse">
+      Base
+      <input
+        class=""
+        name="attr_sub_est_base"
+        type="number"
+        value="0"
+        readonly
+      />
+      Mod
+      <input class="" name="attr_sub_est_mod" type="number" value="0" />
+      Total
+      <input
+        class=""
+        name="attr_sub_est_total"
+        type="number"
+        value="0"
+        readonly
+      />
+    </div>
+    <!-- Fim sub_atributo_estresse -->
+  </div>
+  <!-- Fim atributos_secundarios -->
+  <br /><br />
+  <label>Traços e Condições</label>
+  Nome XP
+  <div class="tracos_condicoes">
+    <div>
+      <fieldset class="caixa_tracos_condicoes">
         <div>
-            <fieldset class="caixa_tracos_condicoes">
-                <div>
-                    <input type="text" name="attr_tra_cod_nome"/>
-                    <input type="number" name="attr_tra_cod_xp" value="0"/>
-                </div>
-            </fieldset>
+          <input type="text" name="attr_tra_cod_nome" placeholder="" />
+          <input type="number" name="attr_tra_cod_xp" value="0" />
         </div>
-        XP Total
-        <input
-            class="linha1"
-            name="attr_xp_total_tracos_condicoes"
-            type="number"
-            value="0"
-            readonly
-        />
+      </fieldset>
     </div>
-    <!-- Fim tracos_condicoes -->
-    <br><br>
-    <label>Habilidades</label>
-    <div class="habilidades">
-        Nome
-        Nivel
-        Mod
-        Total
-        %
-        XP
-        <fieldset class="caixa_habilidades">
-            <div>
-                <input type="text" name="attr_hab_nome"/>
-                <input type="number" name="attr_hab_nivel" value="0"/>
-                <input type="number" name="attr_hab_mod" value="0"/>
-                <input type="number" name="attr_hab_total" value="0" readonly/>
-                <input type="number" name="attr_hab_porcent" value="0" readonly/>
-                <input type="number" name="attr_hab_xp" value="0"/>
+    XP Total
+    <input
+      class=""
+      name="attr_xp_total_tracos_condicoes"
+      type="number"
+      value="0"
+      readonly
+    />
+  </div>
+  <!-- Fim tracos_condicoes -->
+  <br /><br />
+  <label>Habilidades</label>
+  <div class="habilidades">
+    Nome Nivel Mod Total % XP
+    <fieldset class="repeating_caixahabilidades">
+      <!-- Inicio primeira linha caixa habilidades -->
+      <div class="caixa_tabela">
+        <div class="caixa_tabela_linha">
+          <span>
+            <input
+              name="attr_hab_nome"
+              type="text"
+              placeholder="nome da habilidade"
+            />
+          </span>
+          <span>
+            <input name="attr_hab_nivel" type="number" value="0" />
+          </span>
+          <span>
+            <input name="attr_hab_mod" type="number" value="0" />
+          </span>
+          <span>
+            <input name="attr_hab_total" type="number" value="0" readonly />
+          </span>
+          <span>
+            <input name="attr_hab_porcent" type="number" value="0" readonly />
+          </span>
+          <span>
+            <input name="attr_hab_xp" type="number" value="0" />
+          </span>
+        </div>
+      </div>
+      <!-- Fim primeira linha caixa habilidades -->
+      <br>
+      <!-- Inicio caixas de descrição -->
+      <div class="caixa_tabela_linha">
+        <span class="informacao_tabela">
+          <div class="caixa_tabela">
+            <div class="caixa_tabela_linha">
+              <span class="informacao_tabela">
+                <textarea
+                  class="descricao_habilidade"
+                  name="attr_descricao_habilidade"
+                  type="text"
+                  placeholder="descrição da habilidade">
+                </textarea>
+              </span>
             </div>
-        </fieldset>
-        XP Total
-        <input
-            class="linha1"
-            name="attr_xp_total_habilidades"
-            type="number"
-            value="0"
-            readonly
-        />
-    </div>
-    <!-- Fim habilidades -->
+          </div>
+        </span>
+        <br>
+      </div>
+      <!-- Fim caixas de descrição -->
+    </fieldset>
+    XP Total
+    <input
+      class=""
+      name="attr_xp_total_habilidades"
+      type="number"
+      value="0"
+      readonly
+    />
+  </div>
+  <!-- Fim habilidades -->
 </div>
 <!-- Fim principal -->
 
 <!-- JS -->
 <script type="text/worker">
-/*Calculo XP Total Atributos*/
-on("change:for_xp change:agi_xp change:vig_xp change:int_xp change:per_xp change:von_xp sheet:opened", function() {
-    getAttrs(["for_xp", "agi_xp", "vig_xp", "int_xp", "per_xp", "von_xp"], function(values) {
-        let for_xp = parseInt(values.for_xp) || 0;
-        let agi_xp = parseInt(values.agi_xp) || 0;
-        let vig_xp = parseInt(values.vig_xp) || 0;
-        let int_xp = parseInt(values.int_xp) || 0;
-        let per_xp = parseInt(values.per_xp) || 0;
-        let von_xp = parseInt(values.von_xp) || 0;
+  /*Calculo XP Total Atributos*/
+  on("change:for_xp change:agi_xp change:vig_xp change:int_xp change:per_xp change:von_xp sheet:opened", function() {
+      getAttrs(["for_xp", "agi_xp", "vig_xp", "int_xp", "per_xp", "von_xp"], function(values) {
+          let for_xp = parseInt(values.for_xp) || 0;
+          let agi_xp = parseInt(values.agi_xp) || 0;
+          let vig_xp = parseInt(values.vig_xp) || 0;
+          let int_xp = parseInt(values.int_xp) || 0;
+          let per_xp = parseInt(values.per_xp) || 0;
+          let von_xp = parseInt(values.von_xp) || 0;
 
-        let xp_total_atributos = for_xp + agi_xp + vig_xp + int_xp + per_xp + von_xp;
+          let xp_total_atributos = for_xp + agi_xp + vig_xp + int_xp + per_xp + von_xp;
 
-        setAttrs({                            
-            "xp_total_atributos": xp_total_atributos
-        });
-    });
-});
-/*Calculo XP Traços e Condições*/
-on("change:tra_cod_xp sheet:opened", function() {
-    getAttrs(["tra_cod_xp"], function(values) {
-        let tra_cod_xp = parseInt(values.tra_cod_xp) || 0;
+          setAttrs({
+              "xp_total_atributos": xp_total_atributos
+          });
+      });
+  });
+  /*Calculo XP Traços e Condições*/
+  on("change:tra_cod_xp sheet:opened", function() {
+      getAttrs(["tra_cod_xp"], function(values) {
+          let tra_cod_xp = parseInt(values.tra_cod_xp) || 0;
 
-        let xp_total_tracos_condicoes = tra_cod_xp;
-        setAttrs({                            
-            "xp_total_tracos_condicoes": xp_total_tracos_condicoes
-        });
-    });
-});
-/*Calculo XP Habilidades*/
-on("change:hab_xp sheet:opened", function() {
-    getAttrs(["hab_xp"], function(values) {
-        let hab_xp = parseInt(values.hab_xp) || 0;
+          let xp_total_tracos_condicoes = tra_cod_xp;
+          setAttrs({
+              "xp_total_tracos_condicoes": xp_total_tracos_condicoes
+          });
+      });
+  });
+  /*Calculo XP Habilidades*/
+  on("change:hab_xp sheet:opened", function() {
+      getAttrs(["hab_xp"], function(values) {
+          let hab_xp = parseInt(values.hab_xp) || 0;
 
-        let xp_total_habilidades = hab_xp;
-        setAttrs({                            
-            "xp_total_habilidades": xp_total_habilidades
-        });
-    });
-});
-/*Calculo XP Gasto*/
-on("change:xp_total_atributos change:xp_total_tracos_condicoes change:xp_total_habilidades sheet:opened", function() {
-    getAttrs(["xp_total_atributos", "xp_total_tracos_condicoes", "xp_total_habilidades"], function(values) {
-        let xp_total_atributos = parseInt(values.xp_total_atributos) || 0;
-        let xp_total_tracos_condicoes = parseInt(values.xp_total_tracos_condicoes) || 0;
-        let xp_total_habilidades = parseInt(values.xp_total_habilidades) || 0;
+          let xp_total_habilidades = hab_xp;
+          setAttrs({
+              "xp_total_habilidades": xp_total_habilidades
+          });
+      });
+  });
+  /*Calculo XP Gasto*/
+  on("change:xp_total_atributos change:xp_total_tracos_condicoes change:xp_total_habilidades sheet:opened", function() {
+      getAttrs(["xp_total_atributos", "xp_total_tracos_condicoes", "xp_total_habilidades"], function(values) {
+          let xp_total_atributos = parseInt(values.xp_total_atributos) || 0;
+          let xp_total_tracos_condicoes = parseInt(values.xp_total_tracos_condicoes) || 0;
+          let xp_total_habilidades = parseInt(values.xp_total_habilidades) || 0;
 
-        let xp_gasto_personagem = xp_total_atributos + xp_total_tracos_condicoes + xp_total_habilidades;
-        setAttrs({                            
-            "xp_gasto_personagem": xp_gasto_personagem
-        });
-    });
-});
-/*Calculo XP Livre*/
-on("change:xp_total_personagem change:xp_gasto_personagem sheet:opened", function() {
-    getAttrs(["xp_total_personagem", "xp_gasto_personagem"], function(values) {
-        let xp_total_personagem = parseInt(values.xp_total_personagem) || 0;
-        let xp_gasto_personagem = parseInt(values.xp_gasto_personagem) || 0;
+          let xp_gasto_personagem = xp_total_atributos + xp_total_tracos_condicoes + xp_total_habilidades;
+          setAttrs({
+              "xp_gasto_personagem": xp_gasto_personagem
+          });
+      });
+  });
+  /*Calculo XP Livre*/
+  on("change:xp_total_personagem change:xp_gasto_personagem sheet:opened", function() {
+      getAttrs(["xp_total_personagem", "xp_gasto_personagem"], function(values) {
+          let xp_total_personagem = parseInt(values.xp_total_personagem) || 0;
+          let xp_gasto_personagem = parseInt(values.xp_gasto_personagem) || 0;
 
-        let xp_livre_personagem = xp_total_personagem - xp_gasto_personagem;
+          let xp_livre_personagem = xp_total_personagem - xp_gasto_personagem;
 
-        setAttrs({                            
-            "xp_livre_personagem": xp_livre_personagem
-        });
-    });
-});
-/*Calculo Atributos Base*/
-on("change:idade_personagem sheet:opened", function() {
-    getAttrs(["idade_personagem"], function(values) {
-        let idade_personagem = parseInt(values.idade_personagem) || 0;
-        let base = 0;
+          setAttrs({
+              "xp_livre_personagem": xp_livre_personagem
+          });
+      });
+  });
+  /*Calculo Atributos Base*/
+  on("change:idade_personagem sheet:opened", function() {
+      getAttrs(["idade_personagem"], function(values) {
+          let idade_personagem = parseInt(values.idade_personagem) || 0;
+          let base = 0;
 
-        if (idade_personagem <= 17)
-            base = Math.floor((idade_personagem - 1) / 2);
-        else
-            base = 8;
+          if (idade_personagem <= 17)
+              base = Math.floor((idade_personagem - 1) / 2);
+          else
+              base = 8;
 
-        setAttrs({
-            "base": base
-        });
-    });
-});
-/*Calculo Força*/
-on("change:base change:for_nivel change:for_mod sheet:opened", function() {
-    getAttrs(["base", "for_nivel", "for_mod"], function(values) {
-        let base = parseInt(values.base) || 0;
-        let for_nivel = parseInt(values.for_nivel) || 0;
-        let for_mod = parseInt(values.for_mod) || 0;
+          setAttrs({
+              "base": base
+          });
+      });
+  });
+  /*Calculo Força*/
+  on("change:base change:for_nivel change:for_mod sheet:opened", function() {
+      getAttrs(["base", "for_nivel", "for_mod"], function(values) {
+          let base = parseInt(values.base) || 0;
+          let for_nivel = parseInt(values.for_nivel) || 0;
+          let for_mod = parseInt(values.for_mod) || 0;
 
-        let for_total = base + for_nivel + for_mod;
+          let for_total = base + for_nivel + for_mod;
 
-        setAttrs({                            
-            "for_total": for_total
-        });
-    });
-});
-/*Calculo Porcentagem Força */
-on("change:for_total sheet:opened", function() {
-    getAttrs(["for_total"], function(values) {
-        let for_total = parseInt(values.for_total) || 0;
+          setAttrs({
+              "for_total": for_total
+          });
+      });
+  });
+  /*Calculo Porcentagem Força */
+  on("change:for_total sheet:opened", function() {
+      getAttrs(["for_total"], function(values) {
+          let for_total = parseInt(values.for_total) || 0;
 
-        let for_porcent = for_total * 4;
+          let for_porcent = for_total * 4;
 
-        setAttrs({                            
-            "for_porcent": for_porcent
-        });
-    });
-});
-/*Calculo Agilidade*/
-on("change:base change:agi_nivel change:agi_mod sheet:opened", function() {
-    getAttrs(["base", "agi_nivel", "agi_mod"], function(values) {
-        let base = parseInt(values.base) || 0;
-        let agi_nivel = parseInt(values.agi_nivel) || 0;
-        let agi_mod = parseInt(values.agi_mod) || 0;
+          setAttrs({
+              "for_porcent": for_porcent
+          });
+      });
+  });
+  /*Calculo Agilidade*/
+  on("change:base change:agi_nivel change:agi_mod sheet:opened", function() {
+      getAttrs(["base", "agi_nivel", "agi_mod"], function(values) {
+          let base = parseInt(values.base) || 0;
+          let agi_nivel = parseInt(values.agi_nivel) || 0;
+          let agi_mod = parseInt(values.agi_mod) || 0;
 
-        let agi_total = base + agi_nivel + agi_mod;
+          let agi_total = base + agi_nivel + agi_mod;
 
-        setAttrs({                            
-            "agi_total": agi_total
-        });
-    });
-});
-/*Calculo Porcentagem Agilidade */
-on("change:agi_total sheet:opened", function() {
-    getAttrs(["agi_total"], function(values) {
-        let agi_total = parseInt(values.agi_total) || 0;
+          setAttrs({
+              "agi_total": agi_total
+          });
+      });
+  });
+  /*Calculo Porcentagem Agilidade */
+  on("change:agi_total sheet:opened", function() {
+      getAttrs(["agi_total"], function(values) {
+          let agi_total = parseInt(values.agi_total) || 0;
 
-        let agi_porcent = agi_total * 4;
+          let agi_porcent = agi_total * 4;
 
-        setAttrs({                            
-            "agi_porcent": agi_porcent
-        });
-    });
-});
-/*Calculo Vigor*/
-on("change:base change:vig_nivel change:vig_mod sheet:opened", function() {
-    getAttrs(["base", "vig_nivel", "vig_mod"], function(values) {
-        let base = parseInt(values.base) || 0;
-        let vig_nivel = parseInt(values.vig_nivel) || 0;
-        let vig_mod = parseInt(values.vig_mod) || 0;
+          setAttrs({
+              "agi_porcent": agi_porcent
+          });
+      });
+  });
+  /*Calculo Vigor*/
+  on("change:base change:vig_nivel change:vig_mod sheet:opened", function() {
+      getAttrs(["base", "vig_nivel", "vig_mod"], function(values) {
+          let base = parseInt(values.base) || 0;
+          let vig_nivel = parseInt(values.vig_nivel) || 0;
+          let vig_mod = parseInt(values.vig_mod) || 0;
 
-        let vig_total = base + vig_nivel + vig_mod;
+          let vig_total = base + vig_nivel + vig_mod;
 
-        setAttrs({                            
-            "vig_total": vig_total
-        });
-    });
-});
-/*Calculo Porcentagem Vigor */
-on("change:vig_total sheet:opened", function() {
-    getAttrs(["vig_total"], function(values) {
-        let vig_total = parseInt(values.vig_total) || 0;
+          setAttrs({
+              "vig_total": vig_total
+          });
+      });
+  });
+  /*Calculo Porcentagem Vigor */
+  on("change:vig_total sheet:opened", function() {
+      getAttrs(["vig_total"], function(values) {
+          let vig_total = parseInt(values.vig_total) || 0;
 
-        let vig_porcent = vig_total * 4;
+          let vig_porcent = vig_total * 4;
 
-        setAttrs({                            
-            "vig_porcent": vig_porcent
-        });
-    });
-});
-/*Calculo Intelecto*/
-on("change:base change:int_nivel change:int_mod sheet:opened", function() {
-    getAttrs(["base", "int_nivel", "int_mod"], function(values) {
-        let base = parseInt(values.base) || 0;
-        let int_nivel = parseInt(values.int_nivel) || 0;
-        let int_mod = parseInt(values.int_mod) || 0;
+          setAttrs({
+              "vig_porcent": vig_porcent
+          });
+      });
+  });
+  /*Calculo Intelecto*/
+  on("change:base change:int_nivel change:int_mod sheet:opened", function() {
+      getAttrs(["base", "int_nivel", "int_mod"], function(values) {
+          let base = parseInt(values.base) || 0;
+          let int_nivel = parseInt(values.int_nivel) || 0;
+          let int_mod = parseInt(values.int_mod) || 0;
 
-        let int_total = base + int_nivel + int_mod;
+          let int_total = base + int_nivel + int_mod;
 
-        setAttrs({                            
-            "int_total": int_total
-        });
-    });
-});
-/*Calculo Porcentagem Intelecto */
-on("change:int_total sheet:opened", function() {
-    getAttrs(["int_total"], function(values) {
-        let int_total = parseInt(values.int_total) || 0;
+          setAttrs({
+              "int_total": int_total
+          });
+      });
+  });
+  /*Calculo Porcentagem Intelecto */
+  on("change:int_total sheet:opened", function() {
+      getAttrs(["int_total"], function(values) {
+          let int_total = parseInt(values.int_total) || 0;
 
-        let int_porcent = int_total * 4;
+          let int_porcent = int_total * 4;
 
-        setAttrs({                            
-            "int_porcent": int_porcent
-        });
-    });
-});
-/*Calculo Percepção*/
-on("change:base change:per_nivel change:per_mod sheet:opened", function() {
-    getAttrs(["base", "per_nivel", "per_mod"], function(values) {
-        let base = parseInt(values.base) || 0;
-        let per_nivel = parseInt(values.per_nivel) || 0;
-        let per_mod = parseInt(values.per_mod) || 0;
+          setAttrs({
+              "int_porcent": int_porcent
+          });
+      });
+  });
+  /*Calculo Percepção*/
+  on("change:base change:per_nivel change:per_mod sheet:opened", function() {
+      getAttrs(["base", "per_nivel", "per_mod"], function(values) {
+          let base = parseInt(values.base) || 0;
+          let per_nivel = parseInt(values.per_nivel) || 0;
+          let per_mod = parseInt(values.per_mod) || 0;
 
-        let per_total = base + per_nivel + per_mod;
+          let per_total = base + per_nivel + per_mod;
 
-        setAttrs({                            
-            "per_total": per_total
-        });
-    });
-});
-/*Calculo Porcentagem Percepção */
-on("change:per_total sheet:opened", function() {
-    getAttrs(["per_total"], function(values) {
-        let per_total = parseInt(values.per_total) || 0;
+          setAttrs({
+              "per_total": per_total
+          });
+      });
+  });
+  /*Calculo Porcentagem Percepção */
+  on("change:per_total sheet:opened", function() {
+      getAttrs(["per_total"], function(values) {
+          let per_total = parseInt(values.per_total) || 0;
 
-        let per_porcent = per_total * 4;
+          let per_porcent = per_total * 4;
 
-        setAttrs({                            
-            "per_porcent": per_porcent
-        });
-    });
-});
-/*Calculo Vontade*/
-on("change:base change:von_nivel change:von_mod sheet:opened", function() {
-    getAttrs(["base", "von_nivel", "von_mod"], function(values) {
-        let base = parseInt(values.base) || 0;
-        let von_nivel = parseInt(values.von_nivel) || 0;
-        let von_mod = parseInt(values.von_mod) || 0;
+          setAttrs({
+              "per_porcent": per_porcent
+          });
+      });
+  });
+  /*Calculo Vontade*/
+  on("change:base change:von_nivel change:von_mod sheet:opened", function() {
+      getAttrs(["base", "von_nivel", "von_mod"], function(values) {
+          let base = parseInt(values.base) || 0;
+          let von_nivel = parseInt(values.von_nivel) || 0;
+          let von_mod = parseInt(values.von_mod) || 0;
 
-        let von_total = base + von_nivel + von_mod;
+          let von_total = base + von_nivel + von_mod;
 
-        setAttrs({                            
-            "von_total": von_total
-        });
-    });
-});
-/*Calculo Porcentagem Vontade */
-on("change:von_total sheet:opened", function() {
-    getAttrs(["von_total"], function(values) {
-        let von_total = parseInt(values.von_total) || 0;
+          setAttrs({
+              "von_total": von_total
+          });
+      });
+  });
+  /*Calculo Porcentagem Vontade */
+  on("change:von_total sheet:opened", function() {
+      getAttrs(["von_total"], function(values) {
+          let von_total = parseInt(values.von_total) || 0;
 
-        let von_porcent = von_total * 4;
+          let von_porcent = von_total * 4;
 
-        setAttrs({                            
-            "von_porcent": von_porcent
-        });
-    });
-});
-/*Calculo Vitalidade Base*/
-on("change:vig_total sheet:opened", function() {
-    getAttrs(["vig_total"], function(values) {
-        let vig_total = parseInt(values.vig_total) || 0;
+          setAttrs({
+              "von_porcent": von_porcent
+          });
+      });
+  });
+  /*Calculo Vitalidade Base*/
+  on("change:vig_total sheet:opened", function() {
+      getAttrs(["vig_total"], function(values) {
+          let vig_total = parseInt(values.vig_total) || 0;
 
-        let sub_vit_base = vig_total * 2;
+          let sub_vit_base = vig_total * 2;
 
-        setAttrs({                            
-            "sub_vit_base": sub_vit_base
-        });
-    });
-});
-/*Calculo Vitalidade Total*/
-on("change:sub_vit_base change:sub_vit_mod sheet:opened", function() {
-    getAttrs(["sub_vit_base", "sub_vit_mod"], function(values) {
-        let sub_vit_base = parseInt(values.sub_vit_base) || 0;
-        let sub_vit_mod = parseInt(values.sub_vit_mod) || 0;
+          setAttrs({
+              "sub_vit_base": sub_vit_base
+          });
+      });
+  });
+  /*Calculo Vitalidade Total*/
+  on("change:sub_vit_base change:sub_vit_mod sheet:opened", function() {
+      getAttrs(["sub_vit_base", "sub_vit_mod"], function(values) {
+          let sub_vit_base = parseInt(values.sub_vit_base) || 0;
+          let sub_vit_mod = parseInt(values.sub_vit_mod) || 0;
 
-        let sub_vit_total = sub_vit_base + sub_vit_mod;
+          let sub_vit_total = sub_vit_base + sub_vit_mod;
 
-        setAttrs({                            
-            "sub_vit_total": sub_vit_total
-        });
-    });
-});
-/*Calculo Iniciativa Base*/
-on("change:for_total sheet:opened", function() {
-    getAttrs(["agi_total"], function(values) {
-        let agi_total = parseInt(values.agi_total) || 0;
+          setAttrs({
+              "sub_vit_total": sub_vit_total
+          });
+      });
+  });
+  /*Calculo Iniciativa Base*/
+  on("change:for_total sheet:opened", function() {
+      getAttrs(["agi_total"], function(values) {
+          let agi_total = parseInt(values.agi_total) || 0;
 
-        let sub_ini_base = agi_total * 2;
+          let sub_ini_base = agi_total * 2;
 
-        setAttrs({                            
-            "sub_ini_base": sub_ini_base
-        });
-    });
-});
-/*Calculo Iniciativa Total*/
-on("change:sub_ini_base change:sub_ini_mod sheet:opened", function() {
-    getAttrs(["sub_ini_base", "sub_ini_mod"], function(values) {
-        let sub_ini_base = parseInt(values.sub_ini_base) || 0;
-        let sub_ini_mod = parseInt(values.sub_ini_mod) || 0;
+          setAttrs({
+              "sub_ini_base": sub_ini_base
+          });
+      });
+  });
+  /*Calculo Iniciativa Total*/
+  on("change:sub_ini_base change:sub_ini_mod sheet:opened", function() {
+      getAttrs(["sub_ini_base", "sub_ini_mod"], function(values) {
+          let sub_ini_base = parseInt(values.sub_ini_base) || 0;
+          let sub_ini_mod = parseInt(values.sub_ini_mod) || 0;
 
-        let sub_ini_total = sub_ini_base + sub_ini_mod;
+          let sub_ini_total = sub_ini_base + sub_ini_mod;
 
-        setAttrs({                            
-            "sub_ini_total": sub_ini_total
-        });
-    });
-});
-/*Calculo Mod de Dano Base*/
-on("change:for_total sheet:opened", function() {
-    getAttrs(["for_total"], function(values) {
-        let for_total = parseInt(values.for_total) || 0;
+          setAttrs({
+              "sub_ini_total": sub_ini_total
+          });
+      });
+  });
+  /*Calculo Mod de Dano Base*/
+  on("change:for_total sheet:opened", function() {
+      getAttrs(["for_total"], function(values) {
+          let for_total = parseInt(values.for_total) || 0;
 
-        let sub_mod_dano_base = Math.floor((for_total - 10) / 2);
+          let sub_mod_dano_base = Math.floor((for_total - 10) / 2);
 
-        setAttrs({                            
-            "sub_mod_dano_base": sub_mod_dano_base
-        });
-    });
-});
-/*Calculo Mod de Dano Total*/
-on("change:sub_mod_dano_base change:sub_mod_dano_mod sheet:opened", function() {
-    getAttrs(["sub_mod_dano_base", "sub_mod_dano_mod"], function(values) {
-        let sub_mod_dano_base = parseInt(values.sub_mod_dano_base) || 0;
-        let sub_mod_dano_mod = parseInt(values.sub_mod_dano_mod) || 0;
+          setAttrs({
+              "sub_mod_dano_base": sub_mod_dano_base
+          });
+      });
+  });
+  /*Calculo Mod de Dano Total*/
+  on("change:sub_mod_dano_base change:sub_mod_dano_mod sheet:opened", function() {
+      getAttrs(["sub_mod_dano_base", "sub_mod_dano_mod"], function(values) {
+          let sub_mod_dano_base = parseInt(values.sub_mod_dano_base) || 0;
+          let sub_mod_dano_mod = parseInt(values.sub_mod_dano_mod) || 0;
 
-        let sub_mod_dano_total = sub_mod_dano_base + sub_mod_dano_mod;
+          let sub_mod_dano_total = sub_mod_dano_base + sub_mod_dano_mod;
 
-        setAttrs({                            
-            "sub_mod_dano_total": sub_mod_dano_total
-        });
-    });
-});
-/*Calculo Sanidade Base*/
-on("change:von_total sheet:opened", function() {
-    getAttrs(["von_total"], function(values) {
-        let von_total = parseInt(values.von_total) || 0;
+          setAttrs({
+              "sub_mod_dano_total": sub_mod_dano_total
+          });
+      });
+  });
+  /*Calculo Sanidade Base*/
+  on("change:von_total sheet:opened", function() {
+      getAttrs(["von_total"], function(values) {
+          let von_total = parseInt(values.von_total) || 0;
 
-        let sub_san_base = von_total * 2;
+          let sub_san_base = von_total * 2;
 
-        setAttrs({                            
-            "sub_san_base": sub_san_base
-        });
-    });
-});
-/*Calculo Sanidade Total*/
-on("change:sub_san_base change:sub_san_mod sheet:opened", function() {
-    getAttrs(["sub_san_base", "sub_san_mod"], function(values) {
-        let sub_san_base = parseInt(values.sub_san_base) || 0;
-        let sub_san_mod = parseInt(values.sub_san_mod) || 0;
+          setAttrs({
+              "sub_san_base": sub_san_base
+          });
+      });
+  });
+  /*Calculo Sanidade Total*/
+  on("change:sub_san_base change:sub_san_mod sheet:opened", function() {
+      getAttrs(["sub_san_base", "sub_san_mod"], function(values) {
+          let sub_san_base = parseInt(values.sub_san_base) || 0;
+          let sub_san_mod = parseInt(values.sub_san_mod) || 0;
 
-        let sub_san_total = sub_san_base + sub_san_mod;
+          let sub_san_total = sub_san_base + sub_san_mod;
 
-        setAttrs({                            
-            "sub_san_total": sub_san_total
-        });
-    });
-});
-/*Calculo Raciocinio Base*/
-on("change:per_total sheet:opened", function() {
-    getAttrs(["per_total"], function(values) {
-        let per_total = parseInt(values.per_total) || 0;
+          setAttrs({
+              "sub_san_total": sub_san_total
+          });
+      });
+  });
+  /*Calculo Raciocinio Base*/
+  on("change:per_total sheet:opened", function() {
+      getAttrs(["per_total"], function(values) {
+          let per_total = parseInt(values.per_total) || 0;
 
-        let sub_rac_base = per_total * 2;
+          let sub_rac_base = per_total * 2;
 
-        setAttrs({                            
-            "sub_rac_base": sub_rac_base
-        });
-    });
-});
-/*Calculo Raciocinio Total*/
-on("change:sub_rac_base change:sub_rac_mod sheet:opened", function() {
-    getAttrs(["sub_rac_base", "sub_rac_mod"], function(values) {
-        let sub_rac_base = parseInt(values.sub_rac_base) || 0;
-        let sub_rac_mod = parseInt(values.sub_rac_mod) || 0;
+          setAttrs({
+              "sub_rac_base": sub_rac_base
+          });
+      });
+  });
+  /*Calculo Raciocinio Total*/
+  on("change:sub_rac_base change:sub_rac_mod sheet:opened", function() {
+      getAttrs(["sub_rac_base", "sub_rac_mod"], function(values) {
+          let sub_rac_base = parseInt(values.sub_rac_base) || 0;
+          let sub_rac_mod = parseInt(values.sub_rac_mod) || 0;
 
-        let sub_rac_total = sub_rac_base + sub_rac_mod;
+          let sub_rac_total = sub_rac_base + sub_rac_mod;
 
-        setAttrs({                            
-            "sub_rac_total": sub_rac_total
-        });
-    });
-});
-/*Calculo Estresse Base*/
-on("change:int_total sheet:opened", function() {
-    getAttrs(["int_total"], function(values) {
-        let int_total = parseInt(values.int_total) || 0;
+          setAttrs({
+              "sub_rac_total": sub_rac_total
+          });
+      });
+  });
+  /*Calculo Estresse Base*/
+  on("change:int_total sheet:opened", function() {
+      getAttrs(["int_total"], function(values) {
+          let int_total = parseInt(values.int_total) || 0;
 
-        let sub_est_base = Math.floor((int_total - 10 ) / 2);
+          let sub_est_base = Math.floor((int_total - 10 ) / 2);
 
-        setAttrs({                            
-            "sub_est_base": sub_est_base
-        });
-    });
-});
-/*Calculo Estresse Total*/
-on("change:sub_est_base change:sub_est_mod sheet:opened", function() {
-    getAttrs(["sub_est_base", "sub_est_mod"], function(values) {
-        let sub_est_base = parseInt(values.sub_est_base) || 0;
-        let sub_est_mod = parseInt(values.sub_est_mod) || 0;
+          setAttrs({
+              "sub_est_base": sub_est_base
+          });
+      });
+  });
+  /*Calculo Estresse Total*/
+  on("change:sub_est_base change:sub_est_mod sheet:opened", function() {
+      getAttrs(["sub_est_base", "sub_est_mod"], function(values) {
+          let sub_est_base = parseInt(values.sub_est_base) || 0;
+          let sub_est_mod = parseInt(values.sub_est_mod) || 0;
 
-        let sub_est_total = sub_est_base + sub_est_mod;
+          let sub_est_total = sub_est_base + sub_est_mod;
 
-        setAttrs({                            
-            "sub_est_total": sub_est_total
-        });
-    });
-});
-/*Calculo Habilidade Total*/
-on("change:hab_nivel change:hab_mod sheet:opened", function() {
-    getAttrs(["hab_nivel", "hab_mod"], function(values) {
-        let hab_nivel = parseInt(values.hab_nivel) || 0;
-        let hab_mod = parseInt(values.hab_mod) || 0;
+          setAttrs({
+              "sub_est_total": sub_est_total
+          });
+      });
+  });
+  /*
+  Calculo Habilidade Total
+  on("change:hab_nivel change:hab_mod sheet:opened", function() {
+      getAttrs(["hab_nivel", "hab_mod"], function(values) {
+          let hab_nivel = parseInt(values.hab_nivel) || 0;
+          let hab_mod = parseInt(values.hab_mod) || 0;
 
-        let hab_total = hab_nivel + hab_mod;
+          let hab_total = hab_nivel + hab_mod;
 
-        setAttrs({                            
-            "hab_total": hab_total
-        });
-    });
-});
-/*Calculo Porcentagem Habilidade */
-on("change:hab_total sheet:opened", function() {
-    getAttrs(["hab_total"], function(values) {
-        let hab_total = parseInt(values.hab_total) || 0;
+          setAttrs({
+              "hab_total": hab_total
+          });
+      });
+  });
+  Calculo Porcentagem Habilidade
+  on("change:hab_total sheet:opened", function() {
+      getAttrs(["hab_total"], function(values) {
+          let hab_total = parseInt(values.hab_total) || 0;
 
-        let hab_porcent = hab_total * 4;
+          let hab_porcent = hab_total * 4;
 
-        setAttrs({                            
-            "hab_porcent": hab_porcent
-        });
-    });
-});
+          setAttrs({
+              "hab_porcent": hab_porcent
+          });
+      });
+  });
+  */
+  const repeatingSum = (destinations, section, fields) => {
+    if (!Array.isArray(destinations)) destinations = [destinations.replace(/\s/g, '').split(',')];
+    if (!Array.isArray(fields)) fields = [fields.replace(/\s/g, '').split(',')];
+    getSectionIDs(`repeating_${section}`, idArray => {
+        const attrArray = idArray.reduce((m, id) => [...m, ...(fields.map(field => `repeating_${section}_${id}_${field}`))], []);
+        getAttrs([...attrArray], v => {
+            const getValue = (section, id, field) => v[`repeating_${section}_${id}_${field}`] === 'on' ? 1 : parseFloat(v[`repeating_${section}_${id}_${field}`]) || 0;
+            const commonMultipliers = (fields.length <= destinations.length) ? [] : fields.splice(destinations.length, fields.length - destinations.length);
+            const output = {};
+            destinations.forEach((destination, index) => {
+                output[destination] = idArray.reduce((total, id) => total + getValue(section, id, fields[index]) * commonMultipliers.reduce((subtotal, mult) => subtotal * getValue(section, id, mult), 1), 0);
+            });
+            setAttrs(output);
+        }); 
+    }); 
+  };
 </script>
