@@ -1,467 +1,558 @@
 <div class="principal">
-  <div class="cabecalho">
-    <div class="info_cabecalho1">
-      Nome
-      <input
-        class="informacao_personagem"
-        name="attr_nome_personagem"
-        type="text"
-        placeholder="José da Silva"
-      />
+  <!-- Inicio primeira linha do cabeçalho -->
+  <div class="sheet-table left classHeader">
+    <div class="sheet-table-row">
+      <span class="sheet-table-data long">
+        <label>Nome</label>
+      </span>
+      <span class="sheet-table-data">
+        <input
+          name="attr_nome_personagem"
+          type="text"
+          placeholder="José da Silva"
+          style="width: 100%"
+        />
+      </span>
 
-      Aparencia
-      <input
-        class="informacao_personagem"
-        name="attr_aparencia_personagem"
-        type="text"
-        placeholder="alto e moreno de olhos castanhos"
-      />
+      <span class="sheet-table-data" style="width: 15px"></span>
+
+      <span class="sheet-table-data">
+        <label>Aparencia</label>
+      </span>
+      <span class="sheet-table-data">
+        <input
+          name="attr_aparencia_personagem"
+          type="text"
+          placeholder="alto e moreno de olhos castanhos"
+          style="width: 100%"
+        />
+      </span>
     </div>
-    <!-- Fim info_cabecalho1 -->
-    <div class="info_cabecalho2">
-      Pseudôminos
-      <input
-        class="informacao_personagem"
-        name="attr_pseudominos_personagem"
-        type="text"
-        placeholder="Zé"
-      />
-
-      Idade
-      <input
-        class="informacao_personagem"
-        name="attr_idade_personagem"
-        type="number"
-        value="0"
-      />
-
-      Sexo
-      <input
-        class="informacao_personagem"
-        name="attr_sexo_personagem"
-        type="text"
-        placeholder="M/F"
-      />
-    </div>
-    <!-- Fim info_cabecalho2 -->
-    <div class="info_cabecalho3">
-      Conceito
-      <input
-        class="informacao_personagem"
-        name="attr_conceito_personagem"
-        type="text"
-        placeholder="Samurai Renegado"
-      />
-
-      XP Total
-      <input
-        class="informacao_personagem"
-        name="attr_xp_total_personagem"
-        type="number"
-        value="0"
-      />
-
-      XP Gasto
-      <input
-        class="informacao_personagem"
-        name="attr_xp_gasto_personagem"
-        type="number"
-        value="0"
-        readonly
-      />
-
-      XP Livre
-      <input
-        class="informacao_personagem"
-        name="attr_xp_livre_personagem"
-        type="number"
-        value="0"
-        readonly
-      />
-    </div>
-    <!-- Fim info_cabecalho3 -->
+    <!-- Fim sheet-table-row -->
   </div>
-  <!-- Fim cabecalho -->
-  <br /><br />
-  <label>Atributos</label>
-  <div class="atributos">
-    Nome Base Nivel Mod Total % XP
-    <div class="atributo_forca">
-      Força
-      <input class="" name="attr_base" type="number" value="0" readonly />
-      <input class="" name="attr_for_nivel" type="number" value="0" />
-      <input class="" name="attr_for_mod" type="number" value="0" />
-      <input
-        class=""
-        name="attr_for_total"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input
-        class=""
-        name="attr_for_porcent"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input class="" name="attr_for_xp" type="number" value="0" />
+  <!-- Fim sheet-table left classHeader -->
+  <!-- Fim primeira linha do cabeçalho -->
+
+  <!-- Inicio segunda linha do cabeçalho -->
+  <div class="sheet-table left classHeader">
+    <div class="sheet-table-row">
+      <span class="sheet-table-data long">
+        <label>Pseudôminos</label>
+      </span>
+      <span class="sheet-table-data">
+        <input
+          name="attr_pseudominos_personagem"
+          type="text"
+          placeholder="Zé"
+          style="width: 100%"
+        />
+      </span>
+
+      <span class="sheet-table-data" style="width: 15px"></span>
+
+      <span class="sheet-table-data long">
+        <label>Idade</label>
+      </span>
+      <span class="sheet-table-data">
+        <input
+          name="attr_idade_personagem"
+          type="number"
+          value="0"
+          style="width: 100%"
+        />
+      </span>
+
+      <span class="sheet-table-data" style="width: 15px"></span>
+
+      <span class="sheet-table-data long">
+        <label>Sexo</label>
+      </span>
+      <span class="sheet-table-data">
+        <input
+          name="attr_pseudominos_personagem"
+          type="text"
+          placeholder="Masculino"
+          style="width: 100%"
+        />
+      </span>
     </div>
-    <!-- Fim atributo_forca -->
-    <div class="atributo_agilidade">
-      Agilidade
-      <input class="" name="attr_base" type="number" value="0" readonly />
-      <input class="" name="attr_agi_nivel" type="number" value="0" />
-      <input class="" name="attr_agi_mod" type="number" value="0" />
-      <input
-        class=""
-        name="attr_agi_total"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input
-        class=""
-        name="attr_agi_porcent"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input class="" name="attr_agi_xp" type="number" value="0" />
-    </div>
-    <!-- Fim atributo_agilidade -->
-    <div class="atributo_vigor">
-      Vigor
-      <input class="" name="attr_base" type="number" value="0" readonly />
-      <input class="" name="attr_vig_nivel" type="number" value="0" />
-      <input class="" name="attr_vig_mod" type="number" value="0" />
-      <input
-        class=""
-        name="attr_vig_total"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input
-        class=""
-        name="attr_vig_porcent"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input class="" name="attr_vig_xp" type="number" value="0" />
-    </div>
-    <!-- Fim atributo_vigor -->
-    <div class="atributo_intelecto">
-      Intelecto
-      <input class="" name="attr_base" type="number" value="0" readonly />
-      <input class="" name="attr_int_nivel" type="number" value="0" />
-      <input class="" name="attr_int_mod" type="number" value="0" />
-      <input
-        class=""
-        name="attr_int_total"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input
-        class=""
-        name="attr_int_porcent"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input class="" name="attr_int_xp" type="number" value="0" />
-    </div>
-    <!-- Fim atributo_intelecto -->
-    <div class="atributo_percepcao">
-      Percepção
-      <input class="" name="attr_base" type="number" value="0" readonly />
-      <input class="" name="attr_per_nivel" type="number" value="0" />
-      <input class="" name="attr_per_mod" type="number" value="0" />
-      <input
-        class=""
-        name="attr_per_total"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input
-        class=""
-        name="attr_per_porcent"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input class="" name="attr_per_xp" type="number" value="0" />
-    </div>
-    <!-- Fim atributo_percepcao -->
-    <div class="atributo_vontade">
-      Vontade
-      <input class="" name="attr_base" type="number" value="0" readonly />
-      <input class="" name="attr_von_nivel" type="number" value="0" />
-      <input class="" name="attr_von_mod" type="number" value="0" />
-      <input
-        class=""
-        name="attr_von_total"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input
-        class=""
-        name="attr_von_porcent"
-        type="number"
-        value="0"
-        readonly
-      />
-      <input class="" name="attr_von_xp" type="number" value="0" />
-    </div>
-    <!-- Fim atributo_von -->
-    XP Total
-    <input
-      class=""
-      name="attr_xp_total_atributos"
-      type="number"
-      value="0"
-      readonly
-    />
+    <!-- Fim sheet-table-row -->
   </div>
-  <!-- Fim atributos -->
-  <br /><br />
-  <label>Atributos Secundários</label>
-  <div class="atributos_secundarios">
-    <label>Vitalidade</label>
-    <div class="sub_atributo_vitalidade">
-      Base
-      <input
-        class=""
-        name="attr_sub_vit_base"
-        type="number"
-        value="0"
-        readonly
-      />
-      Mod
-      <input class="" name="attr_sub_vit_mod" type="number" value="0" />
-      Total
-      <input
-        class=""
-        name="attr_sub_vit_total"
-        type="number"
-        value="0"
-        readonly
-      />
+  <!-- Fim sheet-table left classHeader -->
+  <!-- Fim segunda linha do cabeçalho -->
+
+  <!-- Inicio terceira linha do cabeçalho -->
+  <div class="sheet-table left classHeader">
+    <div class="sheet-table-row">
+      <span class="sheet-table-data long">
+        <label>Conceito</label>
+      </span>
+      <span class="sheet-table-data">
+        <input
+          name="attr_conceito_personagem"
+          type="text"
+          placeholder="Samurai Renegado"
+          style="width: 100%"
+        />
+      </span>
+
+      <span class="sheet-table-data" style="width: 15px"></span>
+
+      <span class="sheet-table-data long">
+        <label>XP Total</label>
+      </span>
+      <span class="sheet-table-data">
+        <input
+          name="attr_xp_total_personagem"
+          type="number"
+          value="0"
+          style="width: 100%"
+        />
+      </span>
+
+      <span class="sheet-table-data" style="width: 15px"></span>
+
+      <span class="sheet-table-data long">
+        <label>XP Gasto</label>
+      </span>
+      <span class="sheet-table-data">
+        <input
+          name="attr_xp_gasto_personagem"
+          type="number"
+          value="0"
+          readonly
+          style="width: 100%"
+        />
+      </span>
+
+      <span class="sheet-table-data" style="width: 15px"></span>
+
+      <span class="sheet-table-data long">
+        <label>XP Livre</label>
+      </span>
+      <span class="sheet-table-data">
+        <input
+          name="attr_xp_livre_personagem"
+          type="number"
+          value="0"
+          readonly
+          style="width: 100%"
+        />
+      </span>
     </div>
-    <!-- Fim sub_atributo_vitalidade -->
-    <label>Iniciativa</label>
-    <div class="sub_atributo_iniciativa">
-      Base
-      <input
-        class=""
-        name="attr_sub_ini_base"
-        type="number"
-        value="0"
-        readonly
-      />
-      Mod
-      <input class="" name="attr_sub_ini_mod" type="number" value="0" />
-      Total
-      <input
-        class=""
-        name="attr_sub_ini_total"
-        type="number"
-        value="0"
-        readonly
-      />
-    </div>
-    <!-- Fim sub_atributo_iniciativa -->
-    <label>Mod de Dano</label>
-    <div class="sub_atributo_mod_dano">
-      Base
-      <input
-        class=""
-        name="attr_sub_mod_dano_base"
-        type="number"
-        value="0"
-        readonly
-      />
-      Mod
-      <input
-        class=""
-        name="attr_sub_mod_dano_mod"
-        type="number"
-        value="0"
-      />
-      Total
-      <input
-        class=""
-        name="attr_sub_mod_dano_total"
-        type="number"
-        value="0"
-        readonly
-      />
-    </div>
-    <!-- Fim sub_atributo_mod_dano -->
-    <label>Sanidade</label>
-    <div class="sub_atributo_sanidade">
-      Base
-      <input
-        class=""
-        name="attr_sub_san_base"
-        type="number"
-        value="0"
-        readonly
-      />
-      Mod
-      <input class="" name="attr_sub_san_mod" type="number" value="0" />
-      Total
-      <input
-        class=""
-        name="attr_sub_san_total"
-        type="number"
-        value="0"
-        readonly
-      />
-    </div>
-    <!-- Fim sub_atributo_sanidade -->
-    <label>Raciocínio</label>
-    <div class="sub_atributo_raciocinio">
-      Base
-      <input
-        class=""
-        name="attr_sub_rac_base"
-        type="number"
-        value="0"
-        readonly
-      />
-      Mod
-      <input class="" name="attr_sub_rac_mod" type="number" value="0" />
-      Total
-      <input
-        class=""
-        name="attr_sub_rac_total"
-        type="number"
-        value="0"
-        readonly
-      />
-    </div>
-    <!-- Fim sub_atributo_raciocinio -->
-    <label>Estresse</label>
-    <div class="sub_atributo_estresse">
-      Base
-      <input
-        class=""
-        name="attr_sub_est_base"
-        type="number"
-        value="0"
-        readonly
-      />
-      Mod
-      <input class="" name="attr_sub_est_mod" type="number" value="0" />
-      Total
-      <input
-        class=""
-        name="attr_sub_est_total"
-        type="number"
-        value="0"
-        readonly
-      />
-    </div>
-    <!-- Fim sub_atributo_estresse -->
+    <!-- Fim sheet-table-row -->
   </div>
-  <!-- Fim atributos_secundarios -->
-  <br /><br />
-  <label>Traços e Condições</label>
-  Nome XP
-  <div class="tracos_condicoes">
-    <div>
-      <fieldset class="caixa_tracos_condicoes">
-        <div>
-          <input type="text" name="attr_tra_cod_nome" placeholder="" />
-          <input type="number" name="attr_tra_cod_xp" value="0" />
+  <!-- Fim sheet-table left classHeader -->
+  <!-- Fim terceira linha do cabeçalho -->
+
+  <!-- hr pra adicionar um espaço com uma linha. -->
+  <hr />
+
+  <div class="sheet-2colrow bot-margin">
+    <!-- Inicio atributos -->
+    <div class="sheet-col">
+      <label class="sheet-textHead2Col">Atributos</label>
+
+      <div class="atributes-grid center">
+        <span class="vertical-center grid-title">Nome</span>
+        <span class="vertical-center grid-title">Base</span>
+        <span class="vertical-center grid-title">Nivel</span>
+        <span class="vertical-center grid-title">Mod</span>
+        <span class="vertical-center grid-title">Total</span>
+        <span class="vertical-center grid-title">%</span>
+        <span class="vertical-center grid-title">XP</span>
+
+        <div class="atributo_forca">
+          <span class="sheet-col1 vertical-center">Força</span>
+          <input name="attr_base" type="number" value="0" readonly />
+          <input name="attr_for_nivel" type="number" value="0" />
+          <input name="attr_for_mod" type="number" value="0" />
+          <input name="attr_for_total" type="number" value="0" readonly />
+          <input
+            name="attr_for_porcent"
+            type="number"
+            value="0"
+            readonly
+          />
+          <input name="attr_for_xp" type="number" value="0" />
         </div>
-      </fieldset>
-    </div>
-    XP Total
-    <input
-      class=""
-      name="attr_xp_total_tracos_condicoes"
-      type="number"
-      value="0"
-      readonly
-    />
-  </div>
-  <!-- Fim tracos_condicoes -->
-  <br /><br />
-  <label>Habilidades</label>
-  <div class="habilidades">
-    Nome Nivel Mod Total % XP
-    <fieldset class="repeating_caixahabilidades">
-      <!-- Inicio primeira linha caixa habilidades -->
-      <div class="caixa_tabela">
-        <div class="caixa_tabela_linha">
-          <span>
-            <input
-              name="attr_hab_nome"
-              type="text"
-              placeholder="nome da habilidade"
+        <!-- Fim atributo_forca -->
+
+        <div class="atributo_agilidade">
+          <span class="sheet-col1 vertical-center">Agilidade</span>
+          <input name="attr_base" type="number" value="0" readonly />
+          <input name="attr_agi_nivel" type="number" value="0" />
+          <input name="attr_agi_mod" type="number" value="0" />
+          <input name="attr_agi_total" type="number" value="0" readonly />
+          <input
+            name="attr_agi_porcent"
+            type="number"
+            value="0"
+            readonly
             />
-          </span>
-          <span>
-            <input name="attr_hab_nivel" type="number" value="0" />
-          </span>
-          <span>
-            <input name="attr_hab_mod" type="number" value="0" />
-          </span>
-          <span>
-            <input name="attr_hab_total" type="number" value="0" readonly />
-          </span>
-          <span>
-            <input name="attr_hab_porcent" type="number" value="0" readonly />
-          </span>
-          <span>
-            <input name="attr_hab_xp" type="number" value="0" />
-          </span>
+          <input name="attr_agi_xp" type="number" value="0" />
         </div>
+        <!-- Fim atributo_agilidade -->
+
+        <div class="atributo_vigor">
+          <span class="sheet-col1 vertical-center">Vigor</span>
+          <input name="attr_base" type="number" value="0" readonly />
+          <input name="attr_vig_nivel" type="number" value="0" />
+          <input name="attr_vig_mod" type="number" value="0" />
+          <input name="attr_vig_total" type="number" value="0" readonly />
+          <input
+            name="attr_vig_porcent"
+            type="number"
+            value="0"
+            readonly
+          />
+          <input name="attr_vig_xp" type="number" value="0" />
+        </div>
+        <!-- Fim atributo_vigor -->
+
+        <div class="atributo_intelecto">
+          <span class="sheet-col1 vertical-center">Intelecto</span>
+          <input name="attr_base" type="number" value="0" readonly />
+          <input name="attr_int_nivel" type="number" value="0" />
+          <input name="attr_int_mod" type="number" value="0" />
+          <input name="attr_int_total" type="number" value="0" readonly />
+          <input
+            name="attr_int_porcent"
+            type="number"
+            value="0"
+            readonly
+          />
+          <input name="attr_int_xp" type="number" value="0" />
+        </div>
+        <!-- Fim atributo_intelecto -->
+
+        <div class="atributo_percepcao">
+          <span class="sheet-col1 vertical-center">Percepção</span>
+          <input name="attr_base" type="number" value="0" readonly />
+          <input name="attr_per_nivel" type="number" value="0" />
+          <input name="attr_per_mod" type="number" value="0" />
+          <input name="attr_per_total" type="number" value="0" readonly />
+          <input
+            name="attr_per_porcent"
+            type="number"
+            value="0"
+            readonly
+          />
+          <input name="attr_per_xp" type="number" value="0" />
+        </div>
+        <!-- Fim atributo_percepcao -->
+
+        <div class="atributo_vontade">
+          <span class="sheet-col1 vertical-center">Vontade</span>
+          <input name="attr_base" type="number" value="0" readonly />
+          <input name="attr_von_nivel" type="number" value="0" />
+          <input name="attr_von_mod" type="number" value="0" />
+          <input name="attr_von_total" type="number" value="0" readonly />
+          <input
+            name="attr_von_porcent"
+            type="number"
+            value="0"
+            readonly
+          />
+          <input name="attr_von_xp" type="number" value="0" />
+        </div>
+        <!-- Fim atributo_vontade -->
+
+        <span class="sheet-col1 vertical-center">XP Total</span>
+        <input
+          name="attr_xp_total_atributos"
+          type="number"
+          value="0"
+          readonly
+        />
       </div>
-      <!-- Fim primeira linha caixa habilidades -->
-      <br>
-      <!-- Inicio caixas de descrição -->
-      <div class="caixa_tabela_linha">
-        <span class="informacao_tabela">
+      <!-- Fim atributes-grid center -->
+      <!-- Fim atributos -->
+
+      <hr />
+
+      <!-- Inicio atributos secundários -->
+      <label class="sheet-textHead2Col">Atributos Secundários</label>
+      <label>Vitalidade</label>
+      <div class="sub_atributo_vitalidade">
+        Base
+        <input
+          name="attr_sub_vit_base"
+          type="number"
+          value="0"
+          readonly
+        />
+
+        Mod
+        <input name="attr_sub_vit_mod" type="number" value="0" />
+
+        Total
+        <input
+          name="attr_sub_vit_total"
+          type="number"
+          value="0"
+          readonly
+        />
+      </div>
+      <!-- Fim sub_atributo_vitalidade -->
+
+      <label>Iniciativa</label>
+      <div class="sub_atributo_iniciativa">
+        Base
+        <input
+          name="attr_sub_ini_base"
+          type="number"
+          value="0"
+          readonly
+        />
+
+        Mod
+        <input name="attr_sub_ini_mod" type="number" value="0" />
+
+        Total
+        <input
+          name="attr_sub_ini_total"
+          type="number"
+          value="0"
+          readonly
+        />
+      </div>
+      <!-- Fim sub_atributo_iniciativa -->
+
+      <label>Mod de Dano</label>
+      <div class="sub_atributo_mod_dano">
+        Base
+        <input
+          name="attr_sub_mod_dano_base"
+          type="number"
+          value="0"
+          readonly
+        />
+
+        Mod
+        <input name="attr_sub_mod_dano_mod" type="number" value="0" />
+
+        Total
+        <input
+          name="attr_sub_mod_dano_total"
+          type="number"
+          value="0"
+          readonly
+        />
+      </div>
+      <!-- Fim sub_atributo_mod_dano -->
+
+      <label>Sanidade</label>
+      <div class="sub_atributo_sanidade">
+        Base
+        <input
+          name="attr_sub_san_base"
+          type="number"
+          value="0"
+          readonly
+        />
+
+        Mod
+        <input name="attr_sub_san_mod" type="number" value="0" />
+
+        Total
+        <input
+          name="attr_sub_san_total"
+          type="number"
+          value="0"
+          readonly
+        />
+      </div>
+      <!-- Fim sub_atributo_sanidade -->
+
+      <label>Raciocínio</label>
+      <div class="sub_atributo_raciocinio">
+        Base
+        <input
+          name="attr_sub_rac_base"
+          type="number"
+          value="0"
+          readonly
+        />
+
+        Mod
+        <input name="attr_sub_rac_mod" type="number" value="0" />
+
+        Total
+        <input
+          name="attr_sub_rac_total"
+          type="number"
+          value="0"
+          readonly
+        />
+      </div>
+
+      <!-- Fim sub_atributo_raciocinio -->
+      <label>Estresse</label>
+      <div class="sub_atributo_estresse">
+        Base
+        <input
+          name="attr_sub_est_base"
+          type="number"
+          value="0"
+          readonly
+        />
+
+        Mod
+        <input name="attr_sub_est_mod" type="number" value="0" />
+
+        Total
+        <input
+          name="attr_sub_est_total"
+          type="number"
+          value="0"
+          readonly
+        />
+      </div>
+      <!-- Fim sub_atributo_estresse -->
+      <!-- Fim atributos secundários -->
+
+      <hr />
+
+      <!-- Inicio inicio traços e condições -->
+      <label class="sheet-textHead2Col">Traços e Condições</label>
+      <div class="tracos_condicoes">
+        Nome XP
+        <fieldset class="repeating_caixatracoscondicoes">
+          <!-- Inicio primeira linha caixa tracoscondicoes -->
           <div class="caixa_tabela">
             <div class="caixa_tabela_linha">
-              <span class="informacao_tabela">
-                <textarea
-                  class="descricao_habilidade"
-                  name="attr_descricao_habilidade"
+              <span>
+                <input
+                  name="attr_nome_traco_condicao"
                   type="text"
-                  placeholder="descrição da habilidade">
-                </textarea>
+                  placeholder="nome do traço ou condição"
+                />
+              </span>
+              <span>
+                <input name="attr_xp_traco_condicao" type="number" value="0" />
               </span>
             </div>
+            <!-- Fim caixa_tabela_linha -->
           </div>
-        </span>
-        <br>
+          <!-- Fim caixa_tabela -->
+          <!-- Fim primeira linha tracoscondicoes -->
+          <br />
+          <!-- Inicio caixas de descrição -->
+          <div class="caixa_tabela_linha">
+            <span class="informacao_tabela">
+              <div class="caixa_tabela">
+                <div class="caixa_tabela_linha">
+                  <span class="informacao_tabela">
+                    <textarea
+                      class="descricao_traco_condicao"
+                      name="attr_descricao_traco_condicao"
+                      type="text"
+                      placeholder="descrição do traço ou condição">
+                    </textarea>
+                  </span>
+                </div>
+                <!-- Fim caixa_tabela_linha -->
+              </div>
+              <!-- Fim caixa_tabela -->
+            </span>
+            <br />
+          </div>
+          <!-- Fim caixa_tabela_linha -->
+          <!-- Fim caixas de descrição -->
+        </fieldset>
+        XP Total
+        <input
+          name="attr_xp_total_tracos_condicoes"
+          type="number"
+          value="0"
+          readonly
+        />
       </div>
-      <!-- Fim caixas de descrição -->
-    </fieldset>
-    XP Total
-    <input
-      class=""
-      name="attr_xp_total_habilidades"
-      type="number"
-      value="0"
-      readonly
-    />
+      <!-- Fim tracos_condicoes -->
+      <!-- Fim traços e condições -->
+    </div>
+    <!-- Fim sheet-col -->
+
+    <!-- Inicio Habilidades -->
+    <div class="sheet-col">
+      <label class="sheet-textHead2Col">Habilidades</label>
+
+      <span class="vertical-center grid-title">Nome</span>
+      <span class="vertical-center grid-title">Nivel</span>
+      <span class="vertical-center grid-title">Mod</span>
+      <span class="vertical-center grid-title">Total</span>
+      <span class="vertical-center grid-title">%</span>
+      <span class="vertical-center grid-title">XP</span>
+
+      <fieldset class="repeating_caixahabilidades">
+        <!-- Inicio primeira linha caixa habilidades -->
+        <div class="caixa_tabela">
+          <div class="caixa_tabela_linha">
+            <span>
+              <input
+                name="attr_hab_nome"
+                type="text"
+                placeholder="nome da habilidade"
+              />
+            </span>
+            <span>
+              <input name="attr_hab_nivel" type="number" value="0" />
+            </span>
+            <span>
+              <input name="attr_hab_mod" type="number" value="0" />
+            </span>
+            <span>
+              <input name="attr_hab_total" type="number" value="0" readonly />
+            </span>
+            <span>
+              <input name="attr_hab_porcent" type="number" value="0" readonly />
+            </span>
+            <span>
+              <input name="attr_hab_xp" type="number" value="0" />
+            </span>
+          </div>
+        </div>
+        <!-- Fim primeira linha caixa habilidades -->
+        <br />
+        <!-- Inicio caixas de descrição -->
+        <div class="caixa_tabela_linha">
+          <span class="informacao_tabela">
+            <div class="caixa_tabela">
+              <div class="caixa_tabela_linha">
+                <span class="informacao_tabela">
+                  <textarea
+                    class="descricao_habilidade"
+                    name="attr_descricao_habilidade"
+                    type="text"
+                    placeholder="especializações">
+                  </textarea>
+                </span>
+              </div>
+            </div>
+          </span>
+          <br />
+        </div>
+        <!-- Fim caixas de descrição -->
+      </fieldset>
+      XP Total
+      <input
+        name="attr_xp_total_habilidades"
+        type="number"
+        value="0"
+        readonly
+      />
+    </div>
+    <!-- Fim sheet-col -->
+    <!-- Fim habilidades -->
   </div>
-  <!-- Fim habilidades -->
+  <!-- Fim sheet-2colrow bot-margin -->
 </div>
 <!-- Fim principal -->
 
 <!-- JS -->
 <script type="text/worker">
-  /*Calculo XP Total Atributos*/
+  //Calculo XP Total Atributos
   on("change:for_xp change:agi_xp change:vig_xp change:int_xp change:per_xp change:von_xp sheet:opened", function() {
       getAttrs(["for_xp", "agi_xp", "vig_xp", "int_xp", "per_xp", "von_xp"], function(values) {
           let for_xp = parseInt(values.for_xp) || 0;
@@ -478,7 +569,8 @@
           });
       });
   });
-  /*Calculo XP Traços e Condições*/
+
+  //Calculo XP Traços e Condições
   on("change:tra_cod_xp sheet:opened", function() {
       getAttrs(["tra_cod_xp"], function(values) {
           let tra_cod_xp = parseInt(values.tra_cod_xp) || 0;
@@ -489,7 +581,8 @@
           });
       });
   });
-  /*Calculo XP Habilidades*/
+
+  //Calculo XP Habilidades
   on("change:hab_xp sheet:opened", function() {
       getAttrs(["hab_xp"], function(values) {
           let hab_xp = parseInt(values.hab_xp) || 0;
@@ -500,7 +593,8 @@
           });
       });
   });
-  /*Calculo XP Gasto*/
+
+  //Calculo XP Gasto
   on("change:xp_total_atributos change:xp_total_tracos_condicoes change:xp_total_habilidades sheet:opened", function() {
       getAttrs(["xp_total_atributos", "xp_total_tracos_condicoes", "xp_total_habilidades"], function(values) {
           let xp_total_atributos = parseInt(values.xp_total_atributos) || 0;
@@ -513,7 +607,8 @@
           });
       });
   });
-  /*Calculo XP Livre*/
+
+  //Calculo XP Livre
   on("change:xp_total_personagem change:xp_gasto_personagem sheet:opened", function() {
       getAttrs(["xp_total_personagem", "xp_gasto_personagem"], function(values) {
           let xp_total_personagem = parseInt(values.xp_total_personagem) || 0;
@@ -526,7 +621,8 @@
           });
       });
   });
-  /*Calculo Atributos Base*/
+
+  //Calculo Atributos Base
   on("change:idade_personagem sheet:opened", function() {
       getAttrs(["idade_personagem"], function(values) {
           let idade_personagem = parseInt(values.idade_personagem) || 0;
@@ -542,7 +638,8 @@
           });
       });
   });
-  /*Calculo Força*/
+
+  //Calculo Força
   on("change:base change:for_nivel change:for_mod sheet:opened", function() {
       getAttrs(["base", "for_nivel", "for_mod"], function(values) {
           let base = parseInt(values.base) || 0;
@@ -556,7 +653,8 @@
           });
       });
   });
-  /*Calculo Porcentagem Força */
+
+  //Calculo Porcentagem Força
   on("change:for_total sheet:opened", function() {
       getAttrs(["for_total"], function(values) {
           let for_total = parseInt(values.for_total) || 0;
@@ -568,7 +666,8 @@
           });
       });
   });
-  /*Calculo Agilidade*/
+
+  //Calculo Agilidade
   on("change:base change:agi_nivel change:agi_mod sheet:opened", function() {
       getAttrs(["base", "agi_nivel", "agi_mod"], function(values) {
           let base = parseInt(values.base) || 0;
@@ -582,7 +681,8 @@
           });
       });
   });
-  /*Calculo Porcentagem Agilidade */
+
+  //Calculo Porcentagem Agilidade
   on("change:agi_total sheet:opened", function() {
       getAttrs(["agi_total"], function(values) {
           let agi_total = parseInt(values.agi_total) || 0;
@@ -594,7 +694,8 @@
           });
       });
   });
-  /*Calculo Vigor*/
+
+  //Calculo Vigor
   on("change:base change:vig_nivel change:vig_mod sheet:opened", function() {
       getAttrs(["base", "vig_nivel", "vig_mod"], function(values) {
           let base = parseInt(values.base) || 0;
@@ -608,7 +709,8 @@
           });
       });
   });
-  /*Calculo Porcentagem Vigor */
+
+  //Calculo Porcentagem Vigor
   on("change:vig_total sheet:opened", function() {
       getAttrs(["vig_total"], function(values) {
           let vig_total = parseInt(values.vig_total) || 0;
@@ -620,7 +722,8 @@
           });
       });
   });
-  /*Calculo Intelecto*/
+
+  //Calculo Intelecto
   on("change:base change:int_nivel change:int_mod sheet:opened", function() {
       getAttrs(["base", "int_nivel", "int_mod"], function(values) {
           let base = parseInt(values.base) || 0;
@@ -634,7 +737,8 @@
           });
       });
   });
-  /*Calculo Porcentagem Intelecto */
+
+  //Calculo Porcentagem Intelecto
   on("change:int_total sheet:opened", function() {
       getAttrs(["int_total"], function(values) {
           let int_total = parseInt(values.int_total) || 0;
@@ -646,7 +750,8 @@
           });
       });
   });
-  /*Calculo Percepção*/
+
+  //Calculo Percepção
   on("change:base change:per_nivel change:per_mod sheet:opened", function() {
       getAttrs(["base", "per_nivel", "per_mod"], function(values) {
           let base = parseInt(values.base) || 0;
@@ -660,7 +765,8 @@
           });
       });
   });
-  /*Calculo Porcentagem Percepção */
+
+  //Calculo Porcentagem Percepção
   on("change:per_total sheet:opened", function() {
       getAttrs(["per_total"], function(values) {
           let per_total = parseInt(values.per_total) || 0;
@@ -672,7 +778,8 @@
           });
       });
   });
-  /*Calculo Vontade*/
+
+  //Calculo Vontade
   on("change:base change:von_nivel change:von_mod sheet:opened", function() {
       getAttrs(["base", "von_nivel", "von_mod"], function(values) {
           let base = parseInt(values.base) || 0;
@@ -686,7 +793,8 @@
           });
       });
   });
-  /*Calculo Porcentagem Vontade */
+
+  //Calculo Porcentagem Vontade
   on("change:von_total sheet:opened", function() {
       getAttrs(["von_total"], function(values) {
           let von_total = parseInt(values.von_total) || 0;
@@ -698,7 +806,8 @@
           });
       });
   });
-  /*Calculo Vitalidade Base*/
+
+  //Calculo Vitalidade Base
   on("change:vig_total sheet:opened", function() {
       getAttrs(["vig_total"], function(values) {
           let vig_total = parseInt(values.vig_total) || 0;
@@ -710,7 +819,8 @@
           });
       });
   });
-  /*Calculo Vitalidade Total*/
+
+  //Calculo Vitalidade Total
   on("change:sub_vit_base change:sub_vit_mod sheet:opened", function() {
       getAttrs(["sub_vit_base", "sub_vit_mod"], function(values) {
           let sub_vit_base = parseInt(values.sub_vit_base) || 0;
@@ -723,7 +833,8 @@
           });
       });
   });
-  /*Calculo Iniciativa Base*/
+
+  //Calculo Iniciativa Base
   on("change:for_total sheet:opened", function() {
       getAttrs(["agi_total"], function(values) {
           let agi_total = parseInt(values.agi_total) || 0;
@@ -735,7 +846,8 @@
           });
       });
   });
-  /*Calculo Iniciativa Total*/
+
+  //Calculo Iniciativa Total
   on("change:sub_ini_base change:sub_ini_mod sheet:opened", function() {
       getAttrs(["sub_ini_base", "sub_ini_mod"], function(values) {
           let sub_ini_base = parseInt(values.sub_ini_base) || 0;
@@ -748,7 +860,8 @@
           });
       });
   });
-  /*Calculo Mod de Dano Base*/
+
+  //Calculo Mod de Dano Base
   on("change:for_total sheet:opened", function() {
       getAttrs(["for_total"], function(values) {
           let for_total = parseInt(values.for_total) || 0;
@@ -760,7 +873,8 @@
           });
       });
   });
-  /*Calculo Mod de Dano Total*/
+
+  //Calculo Mod de Dano Total
   on("change:sub_mod_dano_base change:sub_mod_dano_mod sheet:opened", function() {
       getAttrs(["sub_mod_dano_base", "sub_mod_dano_mod"], function(values) {
           let sub_mod_dano_base = parseInt(values.sub_mod_dano_base) || 0;
@@ -773,7 +887,8 @@
           });
       });
   });
-  /*Calculo Sanidade Base*/
+
+  //Calculo Sanidade Base
   on("change:von_total sheet:opened", function() {
       getAttrs(["von_total"], function(values) {
           let von_total = parseInt(values.von_total) || 0;
@@ -785,7 +900,8 @@
           });
       });
   });
-  /*Calculo Sanidade Total*/
+
+  //Calculo Sanidade Total
   on("change:sub_san_base change:sub_san_mod sheet:opened", function() {
       getAttrs(["sub_san_base", "sub_san_mod"], function(values) {
           let sub_san_base = parseInt(values.sub_san_base) || 0;
@@ -798,7 +914,8 @@
           });
       });
   });
-  /*Calculo Raciocinio Base*/
+
+  //Calculo Raciocinio Base
   on("change:per_total sheet:opened", function() {
       getAttrs(["per_total"], function(values) {
           let per_total = parseInt(values.per_total) || 0;
@@ -810,7 +927,8 @@
           });
       });
   });
-  /*Calculo Raciocinio Total*/
+
+  //Calculo Raciocinio Total
   on("change:sub_rac_base change:sub_rac_mod sheet:opened", function() {
       getAttrs(["sub_rac_base", "sub_rac_mod"], function(values) {
           let sub_rac_base = parseInt(values.sub_rac_base) || 0;
@@ -823,7 +941,8 @@
           });
       });
   });
-  /*Calculo Estresse Base*/
+
+  //Calculo Estresse Base
   on("change:int_total sheet:opened", function() {
       getAttrs(["int_total"], function(values) {
           let int_total = parseInt(values.int_total) || 0;
@@ -835,7 +954,8 @@
           });
       });
   });
-  /*Calculo Estresse Total*/
+
+  //Calculo Estresse Total
   on("change:sub_est_base change:sub_est_mod sheet:opened", function() {
       getAttrs(["sub_est_base", "sub_est_mod"], function(values) {
           let sub_est_base = parseInt(values.sub_est_base) || 0;
@@ -848,47 +968,73 @@
           });
       });
   });
-  /*
-  Calculo Habilidade Total
-  on("change:hab_nivel change:hab_mod sheet:opened", function() {
-      getAttrs(["hab_nivel", "hab_mod"], function(values) {
-          let hab_nivel = parseInt(values.hab_nivel) || 0;
-          let hab_mod = parseInt(values.hab_mod) || 0;
 
-          let hab_total = hab_nivel + hab_mod;
-
-          setAttrs({
-              "hab_total": hab_total
-          });
-      });
-  });
-  Calculo Porcentagem Habilidade
-  on("change:hab_total sheet:opened", function() {
-      getAttrs(["hab_total"], function(values) {
-          let hab_total = parseInt(values.hab_total) || 0;
-
-          let hab_porcent = hab_total * 4;
-
-          setAttrs({
-              "hab_porcent": hab_porcent
-          });
-      });
-  });
-  */
-  const repeatingSum = (destinations, section, fields) => {
-    if (!Array.isArray(destinations)) destinations = [destinations.replace(/\s/g, '').split(',')];
-    if (!Array.isArray(fields)) fields = [fields.replace(/\s/g, '').split(',')];
+  //Código para fazer contas com fieldsets
+  const repeatingSum = (destinations, section, fields, ...extras) => {
+    const isNumber = value => parseFloat(value).toString() === value.toString();
+    const isOption = value => [...checks.valid, ...checks.roundtypes].includes(value);
+    const isRounding = value => checks.roundtypes.includes(value);
+    const isFraction = value => value.includes('/') && !(value.includes(',') || value.includes('|'));
+    const getTrimmed = value => value.toLowerCase().replace(/\s/g, '');
+    const getRounded = (type, value, pow) => (Math[type](value * Math.pow(10, pow)) / Math.pow(10, pow)).toFixed(Math.max(0, pow));
+    const getFraction = (value) => /*{ console.log(`value: ${value}`); */
+        parseInt(value.split('/')[0]) / parseInt(value.split('/')[1]);
+    const getMultiplier = (value, rounding = 1) => 'undefined' === typeof value ? (rounding ? 0: 1) : (
+        isNumber(value) ? parseFloat(value) : (isFraction(value) ? getFraction(value) : value));
+    if (!Array.isArray(destinations)) destinations = [getTrimmed(destinations)];
+    if (!Array.isArray(fields)) fields = [getTrimmed(fields)];
+    const fields_trimmed = fields.map(field => getTrimmed(field).split(':')[0]);
+    const subfields = fields_trimmed.slice(0,destinations.length);
+    const checks = { valid: ['multiplier'], roundtypes: ['ceil', 'round', 'floor'] };
+    let properties = {attributes: {}, options: {}};
+    extras.forEach(extra => {
+        const [prop, v] = getTrimmed(extra).split(':');
+        const multiplier_maybe = getMultiplier(v, isRounding(prop));
+        const obj = isNumber(multiplier_maybe) ? subfields.reduce((obj,field) => {
+            obj[field] = multiplier_maybe;
+            return obj;
+        },{}) : multiplier_maybe.split(',').reduce((obj, item) => {
+            const [stat, value] = item.split('|');
+            const multiplier = getMultiplier(value, isRounding(prop));
+            obj[stat] = multiplier;
+            return obj;
+        }, {});
+        properties[isOption(prop) ? 'options' : 'attributes'][prop] = obj;
+    });
     getSectionIDs(`repeating_${section}`, idArray => {
-        const attrArray = idArray.reduce((m, id) => [...m, ...(fields.map(field => `repeating_${section}_${id}_${field}`))], []);
-        getAttrs([...attrArray], v => {
+        const attrArray = idArray.reduce((m, id) => [...m, ...(fields_trimmed.map(field => `repeating_${section}_${id}_${field}`))], []);
+        getAttrs([...attrArray, ...Object.keys(properties.attributes)], v => {
             const getValue = (section, id, field) => v[`repeating_${section}_${id}_${field}`] === 'on' ? 1 : parseFloat(v[`repeating_${section}_${id}_${field}`]) || 0;
             const commonMultipliers = (fields.length <= destinations.length) ? [] : fields.splice(destinations.length, fields.length - destinations.length);
-            const output = {};
-            destinations.forEach((destination, index) => {
-                output[destination] = idArray.reduce((total, id) => total + getValue(section, id, fields[index]) * commonMultipliers.reduce((subtotal, mult) => subtotal * getValue(section, id, mult), 1), 0);
-            });
+            const output = destinations.reduce((obj, destination, index) => {
+                let sumTotal = idArray.reduce((total, id) => total + getValue(section, id, fields_trimmed[index]) * commonMultipliers.reduce((subtotal, mult) => subtotal * ((!mult.includes(':') || mult.split(':')[1].split(',').includes(fields_trimmed[index])) ? getValue(section, id, mult.split(':')[0]) : 1), 1), 0);
+                sumTotal *= (properties.options.hasOwnProperty('multiplier') && Object.keys(properties.options.multiplier).includes(fields_trimmed[index])) ? (parseFloat(properties.options.multiplier[fields_trimmed[index]]) || 0): 1;
+                sumTotal += Object.entries(properties.attributes).reduce((total, [key, value]) =>
+                    total += (value.hasOwnProperty(fields_trimmed[index]) ? parseFloat(v[key] || 0) * (parseFloat(value[fields_trimmed[index]]) || 1): 0) , 0);
+                checks.roundtypes.forEach(type => {
+                    if (properties.options.hasOwnProperty(type)) {
+                        if (Object.keys(properties.options[type]).includes(fields_trimmed[index])) {
+                            sumTotal = getRounded(type, sumTotal, (+properties.options[type][fields_trimmed[index]] || 0));
+                        } else if (properties.options[type] == '0' || !isNaN(+properties.options[type] || 'x') ) {
+                            sumTotal = getRounded(type, sumTotal, +properties.options[type]);
+                        }
+                    }
+                });
+                obj[destination] = sumTotal;
+                return obj;
+            }, {});
             setAttrs(output);
-        }); 
-    }); 
+        });
+    });
   };
+
+  //Calculo XP Traços e Condições
+  on("change:repeating_caixatracoscondicoes:xp_traco_condicao remove:repeating_caixatracoscondicoes sheet:opened", function() {
+    repeatingSum("xp_total_tracos_condicoes", "caixatracoscondicoes", "xp_traco_condicao")
+  });
+
+  //Calculo XP Habilidade
+  on("change:repeating_caixahabilidades:hab_xp remove:repeating_caixahabilidades sheet:opened", function() {
+    repeatingSum("xp_total_habilidades", "caixahabilidades", "hab_xp")
+  });
 </script>
